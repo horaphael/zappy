@@ -1,23 +1,23 @@
 /*
 ** EPITECH PROJECT, 2025
 ** tile
-** File description:
-** Tile class implementation
+** Description du fichier :
+** Implémentation de la classe Tile
 */
 
 #include "Tile.hpp"
 
 /**
- * @brief Static map holding resource textures shared by all tiles.
+ * @brief Carte statique contenant les textures de ressources partagées entre toutes les tuiles.
  */
 std::map<std::string, sf::Texture> Zappy::Tile::_resourceTextures;
 
 /**
- * @brief Construct a new Tile object.
+ * @brief Construit un nouvel objet Tile.
  * 
- * @param x X coordinate of the tile.
- * @param y Y coordinate of the tile.
- * @param size Size (width and height) of the tile.
+ * @param x Coordonnée X de la tuile.
+ * @param y Coordonnée Y de la tuile.
+ * @param size Taille (largeur et hauteur) de la tuile.
  */
 Zappy::Tile::Tile(int x, int y, int size) : _x(x), _y(y)
 {
@@ -30,25 +30,25 @@ Zappy::Tile::Tile(int x, int y, int size) : _x(x), _y(y)
 }
 
 /**
- * @brief Load textures for resources if not already loaded.
+ * @brief Charge les textures des ressources si elles ne sont pas déjà chargées.
  */
 void Zappy::Tile::loadResourcesTextures()
 {
     if (_resourceTextures.empty()) {
         if (!_resourceTextures["food"].loadFromFile("./src/GUI/assets/food.png"))
-            std::cerr << "Failed to load food texture" << std::endl;
+            std::cerr << "Échec du chargement de la texture food" << std::endl;
         if (!_resourceTextures["linemate"].loadFromFile("./src/GUI/assets/green.png"))
-            std::cerr << "Failed to load linemate texture" << std::endl;
+            std::cerr << "Échec du chargement de la texture linemate" << std::endl;
         if (!_resourceTextures["deraumere"].loadFromFile("./src/GUI/assets/blue.png"))
-            std::cerr << "Failed to load deraumere texture" << std::endl;
+            std::cerr << "Échec du chargement de la texture deraumere" << std::endl;
         if (!_resourceTextures["sibur"].loadFromFile("./src/GUI/assets/black.png"))
-            std::cerr << "Failed to load sibur texture" << std::endl;
+            std::cerr << "Échec du chargement de la texture sibur" << std::endl;
         if (!_resourceTextures["mendiane"].loadFromFile("./src/GUI/assets/purple.png"))
-            std::cerr << "Failed to load mendiane texture" << std::endl;
+            std::cerr << "Échec du chargement de la texture mendiane" << std::endl;
         if (!_resourceTextures["phiras"].loadFromFile("./src/GUI/assets/pink.png"))
-            std::cerr << "Failed to load phiras texture" << std::endl;
+            std::cerr << "Échec du chargement de la texture phiras" << std::endl;
         if (!_resourceTextures["thystame"].loadFromFile("./src/GUI/assets/red.png"))
-            std::cerr << "Failed to load thystame texture" << std::endl;
+            std::cerr << "Échec du chargement de la texture thystame" << std::endl;
 
         for (auto& [name, texture] : _resourceTextures) {
             sf::Sprite sprite;
@@ -59,12 +59,12 @@ void Zappy::Tile::loadResourcesTextures()
 }
 
 /**
- * @brief Add a resource to the tile.
+ * @brief Ajoute une ressource à la tuile.
  * 
- * If resource doesn't exist yet, initializes with 1.
- * Otherwise increments the resource count by 1.
+ * Si la ressource n'existe pas encore, l'initialise à 1.
+ * Sinon, incrémente la quantité de 1.
  * 
- * @param resource Name of the resource to add.
+ * @param resource Nom de la ressource à ajouter.
  */
 void Zappy::Tile::addRessource(const std::string &resource)
 {
@@ -75,10 +75,10 @@ void Zappy::Tile::addRessource(const std::string &resource)
 }
 
 /**
- * @brief Set the position of the tile's shape.
+ * @brief Définit la position de la forme de la tuile.
  * 
- * @param x New x position.
- * @param y New y position.
+ * @param x Nouvelle position en X.
+ * @param y Nouvelle position en Y.
  */
 void Zappy::Tile::setPosition(float x, float y)
 {
@@ -86,12 +86,12 @@ void Zappy::Tile::setPosition(float x, float y)
 }
 
 /**
- * @brief Remove one unit of a resource from the tile.
+ * @brief Supprime une unité d'une ressource sur la tuile.
  * 
- * If resource quantity is more than one, decrements by one.
- * Otherwise removes the resource entry entirely.
+ * Si la quantité est supérieure à 1, décrémente de 1.
+ * Sinon, supprime complètement l'entrée.
  * 
- * @param resource Name of the resource to remove.
+ * @param resource Nom de la ressource à supprimer.
  */
 void Zappy::Tile::removeRessource(const std::string &resource)
 {
@@ -107,12 +107,12 @@ void Zappy::Tile::removeRessource(const std::string &resource)
 }
 
 /**
- * @brief Draw all resource sprites on the tile.
+ * @brief Dessine tous les sprites de ressources sur la tuile.
  * 
- * Resources are scaled and positioned within the tile, wrapping lines if needed.
+ * Les ressources sont redimensionnées et positionnées dans la tuile, retour à la ligne si nécessaire.
  * 
- * @param window Render window to draw on.
- * @return int Number of resource sprites drawn.
+ * @param window Fenêtre de rendu sur laquelle dessiner.
+ * @return int Nombre de sprites de ressources dessinés.
  */
 int Zappy::Tile::drawResources(sf::RenderWindow &window) const
 {
@@ -147,13 +147,13 @@ int Zappy::Tile::drawResources(sf::RenderWindow &window) const
 }
 
 /**
- * @brief Check if the mouse is hovering over any player on this tile.
+ * @brief Vérifie si la souris survole un joueur présent sur cette tuile.
  * 
- * @param mousePos Position of the mouse cursor.
- * @return std::tuple<bool, std::string, float> Tuple indicating
- *      - if hovering over player (bool),
- *      - player's team name (string),
- *      - player's level (float).
+ * @param mousePos Position du curseur de la souris.
+ * @return std::tuple<bool, std::string, float> Tuple indiquant :
+ *      - si un joueur est survolé (booléen),
+ *      - le nom de l'équipe du joueur (chaîne),
+ *      - le niveau du joueur (float).
  */
 std::tuple<bool, std::string, float> Zappy::Tile::hoverPlayer(const sf::Vector2f &mousePos) const
 {
@@ -169,9 +169,9 @@ std::tuple<bool, std::string, float> Zappy::Tile::hoverPlayer(const sf::Vector2f
 }
 
 /**
- * @brief Add an egg to the tile.
+ * @brief Ajoute un œuf à la tuile.
  * 
- * @param egg Shared pointer to the Egg object to add.
+ * @param egg Pointeur partagé vers l'œuf à ajouter.
  */
 void Zappy::Tile::addEgg(std::shared_ptr<Egg> egg)
 {
@@ -179,9 +179,9 @@ void Zappy::Tile::addEgg(std::shared_ptr<Egg> egg)
 }
 
 /**
- * @brief Draw all eggs on the tile.
+ * @brief Dessine tous les œufs présents sur la tuile.
  * 
- * @param window Render window to draw on.
+ * @param window Fenêtre de rendu sur laquelle dessiner.
  */
 void Zappy::Tile::drawEggs(sf::RenderWindow &window) const
 {
@@ -192,9 +192,9 @@ void Zappy::Tile::drawEggs(sf::RenderWindow &window) const
 }
 
 /**
- * @brief Set the resources map for the tile.
+ * @brief Définit la carte des ressources pour cette tuile.
  * 
- * @param resources Map of resource names and their quantities.
+ * @param resources Carte contenant les noms de ressources et leurs quantités.
  */
 void Zappy::Tile::setResources(const std::map<std::string, int>& resources)
 {
@@ -202,12 +202,12 @@ void Zappy::Tile::setResources(const std::map<std::string, int>& resources)
 }
 
 /**
- * @brief Set the incantation state and level on the tile.
+ * @brief Définit l'état d'incantation et le niveau de la tuile.
  * 
- * Logs start or end of incantation.
+ * Affiche un message indiquant le début ou la fin de l'incantation.
  * 
- * @param state Whether incantation is active or not.
- * @param level Incantation level.
+ * @param state Booléen indiquant si l'incantation est active.
+ * @param level Niveau de l'incantation.
  */
 void Zappy::Tile::setIncantation(bool state, int level)
 {
@@ -215,15 +215,15 @@ void Zappy::Tile::setIncantation(bool state, int level)
     _incantationLevel = level;
 
     if (state)
-        std::cout << "Incantation level " << level << " started on this tile" << std::endl;
+        std::cout << "Incantation niveau " << level << " commencée sur cette tuile" << std::endl;
     else
-        std::cout << "Incantation ended on this tile" << std::endl;
+        std::cout << "Incantation terminée sur cette tuile" << std::endl;
 }
 
 /**
- * @brief Set the players currently on this tile.
+ * @brief Définit les joueurs actuellement présents sur cette tuile.
  * 
- * @param players Map of player IDs to shared pointers to Player objects.
+ * @param players Carte d'identifiants vers des pointeurs partagés vers les objets Player.
  */
 void Zappy::Tile::addPlayer(std::map<int, std::shared_ptr<Player>> players)
 {
@@ -231,12 +231,12 @@ void Zappy::Tile::addPlayer(std::map<int, std::shared_ptr<Player>> players)
 }
 
 /**
- * @brief Get a hover info string about this tile at a given mouse position.
+ * @brief Retourne une chaîne d'information au survol de la souris sur la tuile.
  * 
- * Includes resource quantities.
+ * Inclut les quantités de ressources présentes.
  * 
- * @param mousePos Position of the mouse.
- * @return std::string Multi-line string with resource info or empty if not hovering on tile.
+ * @param mousePos Position de la souris.
+ * @return std::string Chaîne multi-ligne contenant les informations de ressources ou vide si non survolée.
  */
 std::string Zappy::Tile::getHoverInfo(sf::Vector2f mousePos)
 {
@@ -255,11 +255,11 @@ std::string Zappy::Tile::getHoverInfo(sf::Vector2f mousePos)
 }
 
 /**
- * @brief Draw incantation particle effect on the tile if active.
+ * @brief Dessine l'effet de particules d'incantation sur la tuile si elle est active.
  * 
- * Particles float upwards and refresh periodically.
+ * Les particules montent progressivement et se renouvellent périodiquement.
  * 
- * @param window Render window to draw on.
+ * @param window Fenêtre de rendu sur laquelle dessiner.
  */
 void Zappy::Tile::drawIncantation(sf::RenderWindow &window)
 {

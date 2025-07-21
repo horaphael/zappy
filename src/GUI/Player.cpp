@@ -2,21 +2,21 @@
 ** EPITECH PROJECT, 2025
 ** player
 ** File description:
-** Player class implementation
+** Implémentation de la classe Player
 */
 
 #include "Player.hpp"
 
 /**
- * @brief Construct a new Player object
+ * @brief Construit un nouvel objet Player
  *
- * @param id Player's unique identifier.
- * @param x Initial x coordinate.
- * @param y Initial y coordinate.
- * @param direction Initial facing direction.
- * @param team Player's team name.
- * @param mapWidth Width of the map.
- * @param mapHeight Height of the map.
+ * @param id Identifiant unique du joueur.
+ * @param x Coordonnée x initiale.
+ * @param y Coordonnée y initiale.
+ * @param direction Direction initiale du regard.
+ * @param team Nom de l’équipe du joueur.
+ * @param mapWidth Largeur de la carte.
+ * @param mapHeight Hauteur de la carte.
  */
 Zappy::Player::Player(int id, int x, int y, Direction direction, const std::string &team, int mapWidth, int mapHeight)
 : id(id), _x(x), _y(y), _mapWidth(mapWidth), _mapHeight(mapHeight), _level(1), team(team), lifeUnits(1260), _direction(direction), _currentAction(IDLE)
@@ -24,7 +24,7 @@ Zappy::Player::Player(int id, int x, int y, Direction direction, const std::stri
     if (!_directionTextures[SOUTH].loadFromFile("./src/GUI/assets/Trisorien.png")
         || !_directionTextures[EAST].loadFromFile("./src/GUI/assets/Trisorien_profil.png")
         || !_directionTextures[NORTH].loadFromFile("./src/GUI/assets/Trisorien_dos.png"))
-        std::cerr << "Failed to load player textures" << std::endl;
+        std::cerr << "Échec du chargement des textures du joueur" << std::endl;
 
     _sprite.setTexture(_directionTextures[direction]);
     _sprite.setScale(0.1f, 0.1f);
@@ -40,12 +40,12 @@ Zappy::Player::Player(int id, int x, int y, Direction direction, const std::stri
 }
 
 /**
- * @brief Draw the player sprite on the window.
+ * @brief Dessine le sprite du joueur dans la fenêtre.
  *
- * @param window Render window where the sprite will be drawn.
- * @param tileSize Size of each tile (used to calculate position).
- * @param offsetX Horizontal offset for drawing.
- * @param offsetY Vertical offset for drawing.
+ * @param window Fenêtre de rendu où dessiner le sprite.
+ * @param tileSize Taille de chaque tuile (utilisée pour calculer la position).
+ * @param offsetX Décalage horizontal pour le dessin.
+ * @param offsetY Décalage vertical pour le dessin.
  */
 void Zappy::Player::draw(sf::RenderWindow &window, float tileSize, float offsetX, float offsetY) const
 {
@@ -60,9 +60,9 @@ void Zappy::Player::draw(sf::RenderWindow &window, float tileSize, float offsetX
 }
 
 /**
- * @brief Get the team name of the player.
+ * @brief Retourne le nom de l’équipe du joueur.
  *
- * @return std::string Team name.
+ * @return std::string Nom de l’équipe.
  */
 std::string Zappy::Player::getTeamName(void)
 {
@@ -70,9 +70,9 @@ std::string Zappy::Player::getTeamName(void)
 }
 
 /**
- * @brief Get the current level of the player.
+ * @brief Retourne le niveau actuel du joueur.
  *
- * @return float Level value.
+ * @return float Valeur du niveau.
  */
 float Zappy::Player::getLevel(void)
 {
@@ -80,11 +80,11 @@ float Zappy::Player::getLevel(void)
 }
 
 /**
- * @brief Get the bounding box of the player sprite for a given position.
+ * @brief Retourne le rectangle englobant du sprite du joueur à une position donnée.
  *
- * @param posX X coordinate for bounding box center.
- * @param posY Y coordinate for bounding box center.
- * @return sf::FloatRect Bounding rectangle.
+ * @param posX Coordonnée X pour le centre du rectangle.
+ * @param posY Coordonnée Y pour le centre du rectangle.
+ * @return sf::FloatRect Rectangle englobant.
  */
 sf::FloatRect Zappy::Player::getBounds(float posX, float posY) const
 {
@@ -97,11 +97,11 @@ sf::FloatRect Zappy::Player::getBounds(float posX, float posY) const
 }
 
 /**
- * @brief Set the player's inventory.
+ * @brief Définit l’inventaire du joueur.
  *
- * Resets the inventory to zero then updates with provided resources.
+ * Réinitialise l’inventaire à zéro puis met à jour avec les ressources fournies.
  *
- * @param inventory Map of resource names and their quantities.
+ * @param inventory Dictionnaire de ressources et quantités associées.
  */
 void Zappy::Player::setInventory(const std::map<std::string, int>& inventory)
 {
@@ -121,10 +121,10 @@ void Zappy::Player::setInventory(const std::map<std::string, int>& inventory)
 }
 
 /**
- * @brief Set the size of the map.
+ * @brief Définit la taille de la carte.
  *
- * @param width New map width.
- * @param height New map height.
+ * @param width Nouvelle largeur de la carte.
+ * @param height Nouvelle hauteur de la carte.
  */
 void Zappy::Player::setMapSize(int width, int height)
 {
@@ -133,7 +133,7 @@ void Zappy::Player::setMapSize(int width, int height)
 }
 
 /**
- * @brief Update the player's sprite texture based on the direction.
+ * @brief Met à jour la texture du sprite du joueur en fonction de sa direction.
  */
 void Zappy::Player::updateSpriteTexture()
 {
@@ -158,33 +158,33 @@ void Zappy::Player::updateSpriteTexture()
 }
 
 /**
- * @brief Get information string about the player for display on hover.
+ * @brief Retourne une chaîne d’information sur le joueur pour l’affichage lors d’un survol.
  *
- * @return std::string Multi-line info about player state.
+ * @return std::string Informations multi-lignes sur l’état du joueur.
  */
 std::string Zappy::Player::getHoverInfo() const
 {
     std::stringstream ss;
 
-    ss << "Player #" << id << "\n";
-    ss << "Team: " << team << "\n";
-    ss << "Level: " << _level << "\n";
-    ss << "Position: [" << _x << "; " << _y << "]\n";
-    ss << "Direction: ";
+    ss << "Joueur #" << id << "\n";
+    ss << "Équipe : " << team << "\n";
+    ss << "Niveau : " << _level << "\n";
+    ss << "Position : [" << _x << "; " << _y << "]\n";
+    ss << "Direction : ";
     switch(_direction) {
-        case NORTH: ss << "NORTH"; break;
-        case EAST: ss << "EAST"; break;
-        case SOUTH: ss << "SOUTH"; break;
-        case WEST: ss << "WEST"; break;
+        case NORTH: ss << "NORD"; break;
+        case EAST: ss << "EST"; break;
+        case SOUTH: ss << "SUD"; break;
+        case WEST: ss << "OUEST"; break;
     }
-    ss << "\nInventory:\n";
+    ss << "\nInventaire :\n";
     for (const auto& [item, quantity] : _inventory)
-        ss << "  - " << item << ": " << quantity << "\n";
+        ss << "  - " << item << " : " << quantity << "\n";
     return ss.str();
 }
 
 /**
- * @brief Trigger the broadcasting animation.
+ * @brief Déclenche l’animation de broadcast.
  */
 void Zappy::Player::triggerBroadcast()
 {
@@ -192,12 +192,12 @@ void Zappy::Player::triggerBroadcast()
 }
 
 /**
- * @brief Draw the broadcast waves effect.
+ * @brief Dessine l’effet d’ondes de broadcast.
  *
- * @param window Render window to draw on.
- * @param x X coordinate of the player on screen.
- * @param y Y coordinate of the player on screen.
- * @param tileSize Size of the tile.
+ * @param window Fenêtre de rendu sur laquelle dessiner.
+ * @param x Coordonnée X du joueur à l’écran.
+ * @param y Coordonnée Y du joueur à l’écran.
+ * @param tileSize Taille de la tuile.
  */
 void Zappy::Player::drawBroadcast(sf::RenderWindow& window, float x, float y, float tileSize)
 {

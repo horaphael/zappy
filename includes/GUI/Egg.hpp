@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2025
 ** Egg
 ** File description:
-** Egg class representing an egg in the Zappy game.
+** Classe Egg représentant un œuf dans la simulation Zappy.
 */
 
 #ifndef EGG_HPP
@@ -20,55 +20,55 @@ namespace Zappy
 {
     /**
      * @class Egg
-     * @brief Represents an egg entity in the game.
+     * @brief Représente une entité œuf dans la simulation.
      *
-     * The Egg class handles the properties and behaviors of an egg,
-     * including its position, team affiliation, hatch status, and timer.
+     * La classe Egg gère les propriétés et comportements d’un œuf,
+     * incluant sa position, son appartenance à une équipe, son état d’éclosion, et un minuteur.
      */
     class Egg
     {
         public:
             /**
-             * @brief Construct a new Egg object.
+             * @brief Construit un nouvel objet Egg.
              *
-             * @param id Unique identifier of the egg.
-             * @param teamId Identifier of the team the egg belongs to.
-             * @param x Initial X coordinate of the egg.
-             * @param y Initial Y coordinate of the egg.
+             * @param id Identifiant unique de l’œuf.
+             * @param teamId Identifiant de l’équipe à laquelle appartient l’œuf.
+             * @param x Coordonnée X initiale de l’œuf.
+             * @param y Coordonnée Y initiale de l’œuf.
              */
             Egg(int id, int teamId, int x, int y);
 
             /**
-             * @brief Destroy the Egg object.
+             * @brief Détruit l’objet Egg.
              */
             ~Egg() = default;
 
             /**
-             * @brief Update the egg's internal timer.
+             * @brief Met à jour le minuteur interne de l’œuf.
              *
-             * @param deltaTime Time elapsed since last update.
+             * @param deltaTime Temps écoulé depuis la dernière mise à jour.
              */
             void update(float deltaTime);
 
             /**
-             * @brief Draw the egg sprite on the given render window.
+             * @brief Dessine le sprite de l’œuf sur la fenêtre donnée.
              *
-             * @param window SFML render window to draw on.
-             * @param posX X coordinate to draw the egg at.
-             * @param posY Y coordinate to draw the egg at.
+             * @param window Fenêtre SFML sur laquelle dessiner.
+             * @param posX Coordonnée X pour dessiner l’œuf.
+             * @param posY Coordonnée Y pour dessiner l’œuf.
              */
             void draw(sf::RenderWindow &window, float posX, float posY) const;
 
             /**
-             * @brief Get the bounding rectangle of the egg sprite at the specified position.
+             * @brief Obtient le rectangle englobant du sprite de l’œuf à la position spécifiée.
              *
-             * @param posX X coordinate of the egg.
-             * @param posY Y coordinate of the egg.
-             * @return sf::FloatRect Bounding rectangle for collision or hover detection.
+             * @param posX Coordonnée X de l’œuf.
+             * @param posY Coordonnée Y de l’œuf.
+             * @return sf::FloatRect Rectangle englobant pour détection de collision ou survol.
              */
             sf::FloatRect getBounds(float posX, float posY) const;
 
-            /** @name Getters */
+            /** @name Accesseurs */
             ///@{
             inline int getID() const { return id; }
             inline int getTeamID() const { return teamid; }
@@ -78,33 +78,33 @@ namespace Zappy
             inline float getTimer() const { return timer; }
             ///@}
 
-            /** @name Setters */
+            /** @name Mutateurs */
             ///@{
             /**
-             * @brief Set the hatch status of the egg.
+             * @brief Définit l’état d’éclosion de l’œuf.
              *
-             * @param status True if the egg is hatched, false otherwise.
+             * @param status Vrai si l’œuf est éclos, faux sinon.
              */
             void setHatched(bool status) { hatched = status; }
 
             /**
-             * @brief Set the position of the egg.
+             * @brief Définit la position de l’œuf.
              *
-             * @param newX New X coordinate.
-             * @param newY New Y coordinate.
+             * @param newX Nouvelle coordonnée X.
+             * @param newY Nouvelle coordonnée Y.
              */
             void setPosition(int newX, int newY) { x = newX; y = newY; }
             ///@}
 
         private:
-            int id;               /**< Unique egg ID */
-            int teamid;           /**< Team ID that owns the egg */
-            int x;                /**< X position on the map */
-            int y;                /**< Y position on the map */
-            bool hatched = false; /**< Hatch status */
-            float timer = 300.0f; /**< Time until hatching */
-            sf::Texture _texture; /**< Texture for the egg sprite */
-            sf::Sprite _sprite;   /**< Sprite to draw */
+            int id;               /**< Identifiant unique de l’œuf */
+            int teamid;           /**< Identifiant de l’équipe propriétaire de l’œuf */
+            int x;                /**< Position X sur la carte */
+            int y;                /**< Position Y sur la carte */
+            bool hatched = false; /**< État d’éclosion */
+            float timer = 300.0f; /**< Temps restant avant éclosion */
+            sf::Texture _texture; /**< Texture du sprite de l’œuf */
+            sf::Sprite _sprite;   /**< Sprite à dessiner */
     };
 }
 

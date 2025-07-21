@@ -26,7 +26,7 @@ namespace Zappy
 {
     /**
      * @class GUI
-     * @brief Classe principale pour gérer l'interface graphique du jeu Zappy.
+     * @brief Classe principale pour gérer l'interface graphique de la simulation Zappy.
      */
     class GUI
     {
@@ -56,7 +56,7 @@ namespace Zappy
             void run_server(int port, std::string ip);
 
             /**
-             * @brief Lance la boucle du jeu et le rendu de la carte.
+             * @brief Lance la boucle de la simulation et le rendu de la carte.
              */
             void run_game();
 
@@ -83,15 +83,15 @@ namespace Zappy
             bool _connected = false;                          ///< Indique si la connexion est établie
             int _mapWidth = 10;                               ///< Largeur de la carte (valeur par défaut)
             int _mapHeight = 10;                              ///< Hauteur de la carte (valeur par défaut)
-            std::unique_ptr<Map> _map;                        ///< Carte du jeu affichée
-            std::unique_ptr<ParseServer> _parser;             ///< Parseur pour traiter les messages serveur
+            std::unique_ptr<Map> _map;                        ///< Carte de la simulation affichée
+            std::unique_ptr<ParseServer> _parser;             ///< Parseur pour traiter les messages du serveur
             std::thread _parserThread;                        ///< Thread séparé pour le parsing
             bool _running;                                    ///< Indique si la boucle principale est en cours
             sf::RenderWindow _window;                         ///< Fenêtre de rendu SFML
             sf::Texture _backgroundTexture;                   ///< Texture de fond
             sf::Sprite _backgroundSprite;                     ///< Sprite de fond
             sf::Font _font;                                   ///< Police pour l'affichage de texte
-            sf::Text _timerText;                              ///< Texte affichant un timer
+            sf::Text _timerText;                              ///< Texte affichant un minuteur
             sf::Clock _gameClock;                             ///< Horloge pour gérer le temps écoulé
     };
 }

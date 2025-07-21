@@ -1,6 +1,6 @@
 /**
  * @file Tile.hpp
- * @brief Header file for the Tile class
+ * @brief Fichier d'en-tête pour la classe Tile
  */
 
 /*
@@ -24,12 +24,12 @@ namespace Zappy
 {
     /**
      * @class Tile
-     * @brief Represents a tile in the game world
+     * @brief Représente une tuile dans le monde de la simulation
      */
     class Tile
     {
         public:
-            //-----------CONSTRUCTOR-----------//
+            //-----------CONSTRUCTEUR-----------//
             Tile() = default;
             Tile(int x, int y, int size);
             ~Tile() = default;
@@ -43,7 +43,7 @@ namespace Zappy
             const std::map<std::string, int>& getResources() const { return _resources; }
             void setResources(const std::map<std::string, int>& resources);
 
-            //-----------EGG-----------//
+            //-----------ŒUFS-----------//
             void addEgg(std::shared_ptr<Egg> egg);
             void drawEggs(sf::RenderWindow &window) const;
             void removeEgg(const std::string &egg);
@@ -58,19 +58,19 @@ namespace Zappy
             void drawIncantation(sf::RenderWindow &window);
 
         private:
-            int _x; ///< X coordinate of the tile
-            int _y; ///< Y coordinate of the tile
-            sf::RectangleShape shape; ///< SFML shape representing the tile
-            std::map<std::string, int> _resources; ///< Map of resources on the tile
-            std::map<int, std::shared_ptr<Player>> _players; ///< Players on the tile
-            std::vector<std::shared_ptr<Egg>> _eggs; ///< Eggs on the tile
-            bool _isIncanting = false; ///< Incantation status flag
-            int _incantationLevel = 0; ///< Incantation level
-            int nb_ressources = 0; ///< Number of resources
-            std::map<std::string, sf::Sprite> _resourceSprites; ///< Resource sprites
-            static std::map<std::string, sf::Texture> _resourceTextures; ///< Resource textures
-            std::vector<sf::RectangleShape> _particles; ///< Particles for effects
-            sf::Clock _particleClock; ///< Clock for particle effects
+            int _x; ///< Coordonnée X de la tuile
+            int _y; ///< Coordonnée Y de la tuile
+            sf::RectangleShape shape; ///< Forme SFML représentant la tuile
+            std::map<std::string, int> _resources; ///< Ressources présentes sur la tuile
+            std::map<int, std::shared_ptr<Player>> _players; ///< Joueurs présents sur la tuile
+            std::vector<std::shared_ptr<Egg>> _eggs; ///< Œufs présents sur la tuile
+            bool _isIncanting = false; ///< Indique si une incantation est en cours
+            int _incantationLevel = 0; ///< Niveau de l’incantation
+            int nb_ressources = 0; ///< Nombre de ressources
+            std::map<std::string, sf::Sprite> _resourceSprites; ///< Sprites des ressources
+            static std::map<std::string, sf::Texture> _resourceTextures; ///< Textures des ressources
+            std::vector<sf::RectangleShape> _particles; ///< Particules pour les effets
+            sf::Clock _particleClock; ///< Horloge pour les effets de particules
     };
 }
 
