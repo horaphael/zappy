@@ -1,0 +1,15 @@
+<map id="includes/GUI/Player.hpp" name="includes/GUI/Player.hpp">
+<area shape="rect" id="Node000001" title="Déclaration de la classe Player représentant un joueur dans le jeu." alt="" coords="174,5,337,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,77,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,35,92,78,91,73,217,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,80,169,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,35,170,74,167,69,233,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="193,80,246,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,34,235,67,230,65,247,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="270,80,316,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="265,31,282,65,277,68,260,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="340,80,390,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="276,30,335,69,332,74,273,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="414,80,551,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="296,30,429,72,427,77,294,35"/>
+</map>

@@ -1,0 +1,24 @@
+------ TO DO ------
+
+- Coding Style
+- Avant de return pour poll changer le server->running a false
+- Faut faire Broadcast
+- Écrire le nombre de food etc dans Look
+- Faire en sorte que le player spawn la ou il y a un œuf
+- Available slot montre pas (connect_nbr)
+- Quand le GUI rentre, récupérer tout ce qui s’est déjà passé
+- Envoyer commandes depuis le GUI marche pas
+- L’IA est bloquante
+- Implémenter le temps
+- Faire les autres commandes GUI et AI
+- Faire l'IA
+- (Update dans GUI passer la liste d’actions au GUI)
+
+
+------ TEST ------
+
+- (while true; do printf "team1\n"; done) | nc localhost 4241
+- (printf "team1\n"; while true; do printf "Forward\n"; done) | nc localhost 4241
+- (cat /dev/urandom) | nc localhost 4241
+- (printf "team1\n"; cat /dev/urandom) | nc localhost 4241
+- (printf "team1\n"; while true; do printf "Broadcast " ; head -c 8192 /dev/urandom | tr -d "\n"; printf "\n"; done) | nc localhost 4241

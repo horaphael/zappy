@@ -1,0 +1,27 @@
+PROJECT_NAME           = "Zappy"
+PROJECT_BRIEF          = "Objectif du projet: Créer un jeu multijoueur en réseau où plusieurs équipes s'affrontent sur une carte pour atteindre l'élévation maximale."
+PROJECT_LOGO           = ""
+
+INPUT                  = ./src/GUI ./includes/GUI
+FILE_PATTERNS          = *.cpp *.h *.hpp
+RECURSIVE              = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = docs/html
+
+GENERATE_LATEX         = NO
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+JAVADOC_AUTOBRIEF      = YES
+
+USE_MDFILE_AS_MAINPAGE = README.md
+
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = YES
