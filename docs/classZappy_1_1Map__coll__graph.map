@@ -1,0 +1,5 @@
+<map id="Zappy::Map" name="Zappy::Map">
+<area shape="rect" id="Node000001" title="Classe responsable de l&#39;affichage, l&#39;interaction et la gestion de la carte graphique." alt="" coords="29,96,119,123"/>
+<area shape="rect" id="Node000002" href="$classZappy_1_1ParseServer.html" title="Gère la réception, l&#39;interprétation et le traitement des commandes serveur." alt="" coords="5,5,143,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,48,77,95,71,95,71,48"/>
+</map>
