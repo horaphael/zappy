@@ -1,0 +1,13 @@
+<map id="fill_world_struct" name="fill_world_struct">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,118,83"/>
+<area shape="rect" id="Node000002" href="$init__struct_8c.html#a85408a7e78549df51215dc0ea1e20804" title=" " alt="" coords="170,5,243,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,53,154,34,156,39,103,58"/>
+<area shape="rect" id="Node000003" href="$init__map_8c.html#a1a6242827af35caceae4afe960f42406" title=" " alt="" coords="171,56,242,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,67,155,67,155,72,118,72"/>
+<area shape="rect" id="Node000006" href="$init__struct_8c.html#ade9f931f7462fc50d6b18bbb893a3d56" title=" " alt="" coords="166,107,247,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="103,81,153,99,151,104,101,86"/>
+<area shape="rect" id="Node000004" href="$init__map_8c.html#a726fdba9fabf299b701308fefcd500fb" title=" " alt="" coords="295,56,360,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="242,67,279,67,279,72,242,72"/>
+<area shape="rect" id="Node000005" href="$init__map_8c.html#aaec71d340cd2221ca9ed2e6ccbfd6985" title=" " alt="" coords="408,56,471,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="361,67,393,67,393,72,361,72"/>
+</map>

@@ -1,27 +1,41 @@
+#------------------- Projet -------------------
 PROJECT_NAME           = "Zappy"
-PROJECT_BRIEF          = "Objectif du projet: Créer un jeu multijoueur en réseau où plusieurs équipes s'affrontent sur une carte pour atteindre l'élévation maximale."
-PROJECT_LOGO           = ""
+PROJECT_BRIEF          = "Objectif du projet: Créer une simulation en réseau où plusieurs équipes s'affrontent sur une carte pour atteindre l'élévation maximale."
+PROJECT_LOGO           =
 
-INPUT                  = ./src/GUI ./includes/GUI
-FILE_PATTERNS          = *.cpp *.h *.hpp
+#------------------- Chemins des fichiers -------------------
+INPUT                  = ./src ./includes
+FILE_PATTERNS          = *.cpp *.h *.hpp *.c
 RECURSIVE              = YES
 
+#------------------- Dossiers de sortie -------------------
+OUTPUT_DIRECTORY       = docs_build
 GENERATE_HTML          = YES
-HTML_OUTPUT            = docs/html
+HTML_OUTPUT            = html
 
+#------------------- PDF / LaTeX -------------------
 GENERATE_LATEX         = NO
 
+#------------------- Extraction de documentation -------------------
 EXTRACT_ALL            = YES
 EXTRACT_PRIVATE        = YES
 EXTRACT_STATIC         = YES
 
+#------------------- Graphes & dépendances -------------------
 HAVE_DOT               = YES
 CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
 
+#------------------- Style de commentaires -------------------
 JAVADOC_AUTOBRIEF      = YES
 
+#------------------- README comme page principale -------------------
 USE_MDFILE_AS_MAINPAGE = README.md
 
+#------------------- Warnings / Logs -------------------
 QUIET                  = NO
 WARN_IF_UNDOCUMENTED   = YES
+
+#------------------- Divers -------------------
+GENERATE_TREEVIEW      = YES
+FULL_PATH_NAMES        = NO

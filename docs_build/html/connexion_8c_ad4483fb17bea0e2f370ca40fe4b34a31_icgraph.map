@@ -1,0 +1,13 @@
+<map id="poll_connexion" name="poll_connexion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="396,31,504,57"/>
+<area shape="rect" id="Node000002" href="$zappy__server_8c.html#ac9c99830ae1db0d53cea528d28070b20" title=" " alt="" coords="266,31,348,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="381,47,349,47,349,41,381,41"/>
+<area shape="rect" id="Node000003" href="$classZappy_1_1GUI.html#a1b481169c2ee6787213fc623e81d15dc" title="Lance la boucle principale avec la connexion au serveur." alt="" coords="103,5,218,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,37,218,31,219,26,251,32"/>
+<area shape="rect" id="Node000005" href="$zappy__server_8c.html#aa62b5b5a4d5571b52b810593a981fc1d" title=" " alt="" coords="111,56,210,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="251,56,211,63,210,58,250,51"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="95,72,55,72,55,67,95,67"/>
+</map>

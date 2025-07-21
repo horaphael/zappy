@@ -1,0 +1,33 @@
+<map id="assign_team" name="assign_team">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,101,133"/>
+<area shape="rect" id="Node000002" href="$handle__teams_8c.html#a68e0db7a6b1b56e8a58cca81ad3b339d" title=" " alt="" coords="149,31,269,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,104,147,67,159,62,161,66,150,72,80,108"/>
+<area shape="rect" id="Node000003" href="$handle__teams_8c.html#a1aae1a07020f84e7950d985cc24d8b35" title=" " alt="" coords="158,81,260,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,110,142,103,143,108,102,115"/>
+<area shape="rect" id="Node000004" href="$handle__teams_8c.html#af1d9ab5a7d9ef413893b8f8df29632e2" title=" " alt="" coords="162,132,256,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="102,125,147,133,146,138,101,130"/>
+<area shape="rect" id="Node000012" href="$handle__teams_8c.html#a2021a141ff36f233a3ad7f63d2ea417a" title=" " alt="" coords="158,284,260,311"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="68,132,188,270,184,274,64,136"/>
+<area shape="rect" id="Node000005" href="$player__utils_8c.html#a8235cd0b4b352f285a5b0d6e3cf557b9" title=" " alt="" coords="331,5,457,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="250,129,267,118,283,99,290,81,298,61,315,42,322,37,325,42,319,46,303,64,295,83,287,102,271,122,253,134"/>
+<area shape="rect" id="Node000006" href="$player__utils_8c.html#a9540d02163f9d7708602d425f968148e" title=" " alt="" coords="324,56,464,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="242,129,268,118,316,92,332,86,334,91,318,97,270,122,244,134"/>
+<area shape="rect" id="Node000007" href="$egg_8c.html#a0e9fd2144d2e1966c04a1fdbd8902cd0" title=" " alt="" coords="317,107,470,133"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="256,136,301,130,302,135,257,142"/>
+<area shape="rect" id="Node000008" href="$create__player_8c.html#a1443da9f630fb2681ec546f45e51ba98" title=" " alt="" coords="344,157,443,184"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="257,149,329,159,328,164,256,154"/>
+<area shape="rect" id="Node000011" href="$player__commands_8c.html#a9f118e4f106302778af0a901d1f03796" title=" " alt="" coords="354,208,434,235"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="238,157,318,194,340,202,338,207,316,198,236,162"/>
+<area shape="rect" id="Node000009" href="$create__player_8c.html#ac0af88e3160d36d2017d33b11b060b37" title=" " alt="" coords="522,132,635,159"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="443,161,506,152,507,158,444,167"/>
+<area shape="rect" id="Node000010" href="$create__player_8c.html#a214de68a0ec94201508ab29b749bfb58" title=" " alt="" coords="518,183,639,209"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="444,175,503,183,503,188,443,180"/>
+<area shape="rect" id="Node000013" href="$map__commands_8c.html#a2b2a64a0bdc115db8950928d29a0807a" title=" " alt="" coords="355,259,433,285"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="260,288,339,277,340,282,260,293"/>
+<area shape="rect" id="Node000015" href="$map__commands_8c.html#a450422d1d74518e0b0796a4167203f30" title=" " alt="" coords="353,309,434,336"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="260,302,338,312,337,318,260,307"/>
+<area shape="rect" id="Node000016" href="$team__commands_8c.html#ae2f82ec8b6c3e758252fcb74d4ae9500" title=" " alt="" coords="357,360,431,387"/>
+<area shape="poly" id="edge15_Node000012_Node000016" title=" " alt="" coords="238,309,318,346,342,355,341,360,316,350,236,314"/>
+<area shape="rect" id="Node000014" href="$map__commands_8c.html#acd4570e413c15e23b62beda546d2a62b" title=" " alt="" coords="541,259,616,285"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="433,269,526,269,526,275,433,275"/>
+</map>
