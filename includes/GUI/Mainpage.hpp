@@ -1,5 +1,5 @@
 /**
- * @mainpage 🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox
+ * @mainpage 🎮 Zappy - Simulateur Réseau
  *
  * @section objectif Objectif du projet
  * Créer un Simulateur en réseau où plusieurs équipes s'affrontent sur une carte pour atteindre l’élévation maximale.
