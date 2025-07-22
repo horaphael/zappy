@@ -1,0 +1,9 @@
+<map id="egg_s" name="egg_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="69,123,129,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,44,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,41,94,121,90,124,37,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="69,5,130,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,44,102,123,97,123,97,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="187,5,238,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,45,202,74,185,101,159,119,131,130,129,125,156,115,181,97,197,71,206,44"/>
+</map>

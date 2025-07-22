@@ -23,8 +23,12 @@ EXTRACT_STATIC         = YES
 
 #------------------- Graphes & dépendances -------------------
 HAVE_DOT               = YES
+DOT_PATH               = 
+CLASS_DIAGRAMS         = YES
 CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
+HIDE_UNDOC_RELATIONS   = NO
+DOT_IMAGE_FORMAT       = svg
 
 #------------------- Style de commentaires -------------------
 JAVADOC_AUTOBRIEF      = YES

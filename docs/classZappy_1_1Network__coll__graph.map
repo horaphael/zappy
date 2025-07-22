@@ -1,0 +1,7 @@
+<map id="Zappy::Network" name="Zappy::Network">
+<area shape="rect" id="Node000001" title="Classe gérant la connexion TCP, l&#39;envoi et la réception de messages." alt="" coords="122,93,247,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,209,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,39,176,91,172,95,125,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="234,5,293,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,43,198,95,194,91,242,39"/>
+</map>
