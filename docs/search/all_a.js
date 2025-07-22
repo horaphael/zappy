@@ -22,10 +22,9 @@ var searchData=
   ['init_5ftile_19',['init_tile',['../init__map_8c.html#aaec71d340cd2221ca9ed2e6ccbfd6985',1,'init_map.c']]],
   ['init_5fworld_5fstruct_20',['init_world_struct',['../init__struct_8c.html#aa41e98f2f17e287cb44d931309733dc4',1,'init_struct.c']]],
   ['initcommandmap_21',['initCommandMap',['../classZappy_1_1ParseServer.html#aae257c11a873ec5753aac191fb02452b',1,'Zappy::ParseServer']]],
-  ['inspiré_20de_20zaphod_20beeblebrox_22',['🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox',['../index.html',1,'']]],
-  ['interface_20graphique_23',['🖥️ Interface Graphique',['../index.html#interface',1,'']]],
-  ['inventory_2ec_24',['inventory.c',['../inventory_8c.html',1,'']]],
-  ['is_5fvalid_5fteam_25',['is_valid_team',['../handle__teams_8c.html#a1aae1a07020f84e7950d985cc24d8b35',1,'handle_teams.c']]],
-  ['ishatched_26',['isHatched',['../classZappy_1_1Egg.html#a3e0cb5da0c8efcbfc04345b1d3f62cc4',1,'Zappy::Egg']]],
-  ['ismapready_27',['isMapReady',['../classZappy_1_1ParseServer.html#a2f6b65bf1fca734a11550118c7aae75c',1,'Zappy::ParseServer']]]
+  ['interface_20graphique_22',['🖥️ Interface Graphique',['../index.html#interface',1,'']]],
+  ['inventory_2ec_23',['inventory.c',['../inventory_8c.html',1,'']]],
+  ['is_5fvalid_5fteam_24',['is_valid_team',['../handle__teams_8c.html#a1aae1a07020f84e7950d985cc24d8b35',1,'handle_teams.c']]],
+  ['ishatched_25',['isHatched',['../classZappy_1_1Egg.html#a3e0cb5da0c8efcbfc04345b1d3f62cc4',1,'Zappy::Egg']]],
+  ['ismapready_26',['isMapReady',['../classZappy_1_1ParseServer.html#a2f6b65bf1fca734a11550118c7aae75c',1,'Zappy::ParseServer']]]
 ];

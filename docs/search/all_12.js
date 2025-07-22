@@ -41,7 +41,7 @@ var searchData=
   ['shape_38',['shape',['../classZappy_1_1Map.html#aa91986d8e06209b1b1b3e199a9d933a0',1,'Zappy::Map::shape'],['../classZappy_1_1Tile.html#a1678f7aa631badf755c2bf68cafb139c',1,'Zappy::Tile::shape']]],
   ['sibur_5fdensity_39',['sibur_density',['../structworld__s.html#a773b55a270639a978bb0633f77c2407b',1,'world_s']]],
   ['simulateur_20_3a_20trantor_40',['🌍 Monde du Simulateur : Trantor',['../index.html#monde',1,'']]],
-  ['simulateur_20réseau_20inspiré_20de_20zaphod_20beeblebrox_41',['🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox',['../index.html',1,'']]],
+  ['simulateur_20réseau_41',['🎮 Zappy - Simulateur Réseau',['../index.html',1,'']]],
   ['south_42',['south',['../namespaceZappy.html#a5db576a814f90f11b28d884636ed896ba2020d60b5570ee54ac683d37007312c8',1,'Zappy::SOUTH'],['../server_8h.html#a7b6212532f22831f81387f285488dabda8ef5c0bce69283a9986011a63eea8a6b',1,'SOUTH:&#160;server.h']]],
   ['spawn_5fresources_43',['spawn_resources',['../handle__resources_8c.html#a3c406c85489e0e133dd9653408fbfa6c',1,'spawn_resources(world_t *world, UI height, UI width):&#160;handle_resources.c'],['../server_8h.html#a3c406c85489e0e133dd9653408fbfa6c',1,'spawn_resources(world_t *world, UI height, UI width):&#160;handle_resources.c']]],
   ['split_44',['split',['../classZappy_1_1ParseServer.html#a05e7cf210ff51443e77327d3a745f8b4',1,'Zappy::ParseServer']]],

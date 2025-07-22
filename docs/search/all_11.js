@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['réseau_20inspiré_20de_20zaphod_20beeblebrox_0',['🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox',['../index.html',1,'']]],
+  ['réseau_0',['🎮 Zappy - Simulateur Réseau',['../index.html',1,'']]],
   ['random_5fdirection_1',['random_direction',['../create__player_8c.html#a214de68a0ec94201508ab29b749bfb58',1,'create_player.c']]],
   ['read_5fclient_5finput_2',['read_client_input',['../handle__clients_8c.html#a9a86c5ec637526d9f19fe62cc23daf62',1,'handle_clients.c']]],
   ['receivemessage_3',['receiveMessage',['../classZappy_1_1Network.html#a22efa5600c2760e0269991580700c3c6',1,'Zappy::Network']]],
