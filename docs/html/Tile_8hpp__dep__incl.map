@@ -1,6 +1,6 @@
 <map id="Tile.hpp" name="Tile.hpp">
-<area shape="rect" id="Node000001" title="Header file for the Tile class." alt="" coords="194,5,262,32"/>
-<area shape="rect" id="Node000002" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du jeu." alt="" coords="96,155,168,181"/>
+<area shape="rect" id="Node000001" title="Fichier d&#39;en&#45;tête pour la classe Tile." alt="" coords="194,5,262,32"/>
+<area shape="rect" id="Node000002" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du simulateur." alt="" coords="96,155,168,181"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,43,177,61,159,81,143,120,136,155,131,154,138,119,155,79,173,57,194,39"/>
 <area shape="rect" id="Node000007" href="$ParseServer_8hpp.html" title="Déclaration de la classe ParseServer." alt="" coords="169,80,287,107"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="231,48,231,80,225,80,225,48"/>

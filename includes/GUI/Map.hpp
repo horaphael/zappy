@@ -1,6 +1,6 @@
 /**
  * @file Map.hpp
- * @brief Déclaration de la classe Map pour gérer l'affichage et l'interaction avec la carte du jeu.
+ * @brief Déclaration de la classe Map pour gérer l'affichage et l'interaction avec la carte du simulateur.
  */
 
 #ifndef MAP_HPP_

@@ -1,5 +1,5 @@
 <map id="Zappy::Tile::Tile" name="Zappy::Tile::Tile">
-<area shape="rect" id="Node000001" title="Construct a new Tile object." alt="" coords="5,13,121,40"/>
-<area shape="rect" id="Node000002" href="$classZappy_1_1Tile.html#acad11858fb0c058e4302d32baf99d469" title="Load textures for resources if not already loaded." alt="" coords="169,5,350,48"/>
+<area shape="rect" id="Node000001" title="Construit un nouvel objet Tile." alt="" coords="5,13,121,40"/>
+<area shape="rect" id="Node000002" href="$classZappy_1_1Tile.html#acad11858fb0c058e4302d32baf99d469" title="Charge les textures des ressources si elles ne sont pas déjà chargées." alt="" coords="169,5,350,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,24,153,24,153,29,121,29"/>
 </map>

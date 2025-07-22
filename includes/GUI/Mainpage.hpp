@@ -1,16 +1,16 @@
 /**
- * @mainpage 🎮 Zappy - Jeu Réseau Multijoueur Inspiré de Zaphod Beeblebrox
+ * @mainpage 🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox
  *
  * @section objectif Objectif du projet
- * Créer un jeu multijoueur en réseau où plusieurs équipes s'affrontent sur une carte pour atteindre l’élévation maximale.
+ * Créer un Simulateur en réseau où plusieurs équipes s'affrontent sur une carte pour atteindre l’élévation maximale.
  * L’équipe gagnante est celle où au moins 6 joueurs atteignent le niveau 8.
  *
  * @section composants 🔧 Composants à développer
  * - **zappy_server (en C)** : Serveur qui gère le monde et les communications.
- * - **zappy_gui (en C++)** : Interface graphique pour observer le jeu.
+ * - **zappy_gui (en C++)** : Interface graphique pour observer le Simulateur.
  * - **zappy_ai (langage libre)** : Client autonome contrôlant les joueurs.
  *
- * @section monde 🌍 Monde du jeu : Trantor
+ * @section monde 🌍 Monde du Simulateur : Trantor
  * - Carte torique (rebouclée sur les bords).
  * - Ressources : nourriture + 6 types de pierres (linemate, deraumere, sibur, mendiane, phiras, thystame).
  * - Ressources réparties uniformément, avec des densités définies.

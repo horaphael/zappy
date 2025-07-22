@@ -1,6 +1,6 @@
 <map id="Tile.cpp" name="Tile.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="198,5,265,32"/>
-<area shape="rect" id="Node000002" href="$Tile_8hpp.html" title="Header file for the Tile class." alt="" coords="198,80,265,107"/>
+<area shape="rect" id="Node000002" href="$Tile_8hpp.html" title="Fichier d&#39;en&#45;tête pour la classe Tile." alt="" coords="198,80,265,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,33,234,64,229,64,229,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,304,52,331"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,109,184,130,153,157,92,228,47,292,42,289,87,225,149,153,180,126,210,105"/>

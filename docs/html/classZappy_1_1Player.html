@@ -279,7 +279,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructeur. </p>
-<p>Construct a new <a class="el" href="classZappy_1_1Player.html" title="Représente un joueur affiché sur la carte côté interface graphique.">Player</a> object.</p>
+<p>Construit un nouvel objet <a class="el" href="classZappy_1_1Player.html" title="Représente un joueur affiché sur la carte côté interface graphique.">Player</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>Identifiant du joueur </td></tr>
@@ -289,13 +289,13 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">team</td><td>Nom de l'équipe </td></tr>
     <tr><td class="paramname">mapWidth</td><td>Largeur de la carte </td></tr>
     <tr><td class="paramname">mapHeight</td><td>Hauteur de la carte</td></tr>
-    <tr><td class="paramname">id</td><td><a class="el" href="classZappy_1_1Player.html" title="Représente un joueur affiché sur la carte côté interface graphique.">Player</a>'s unique identifier. </td></tr>
-    <tr><td class="paramname">x</td><td>Initial x coordinate. </td></tr>
-    <tr><td class="paramname">y</td><td>Initial y coordinate. </td></tr>
-    <tr><td class="paramname">direction</td><td>Initial facing direction. </td></tr>
-    <tr><td class="paramname">team</td><td><a class="el" href="classZappy_1_1Player.html" title="Représente un joueur affiché sur la carte côté interface graphique.">Player</a>'s team name. </td></tr>
-    <tr><td class="paramname">mapWidth</td><td>Width of the map. </td></tr>
-    <tr><td class="paramname">mapHeight</td><td>Height of the map. </td></tr>
+    <tr><td class="paramname">id</td><td>Identifiant unique du joueur. </td></tr>
+    <tr><td class="paramname">x</td><td>Coordonnée x initiale. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordonnée y initiale. </td></tr>
+    <tr><td class="paramname">direction</td><td>Direction initiale du regard. </td></tr>
+    <tr><td class="paramname">team</td><td>Nom de l’équipe du joueur. </td></tr>
+    <tr><td class="paramname">mapWidth</td><td>Largeur de la carte. </td></tr>
+    <tr><td class="paramname">mapHeight</td><td>Hauteur de la carte. </td></tr>
   </table>
   </dd>
 </dl>
@@ -360,13 +360,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Dessine le joueur à l’écran. </p>
-<p>Draw the player sprite on the window.</p>
+<p>Dessine le sprite du joueur dans la fenêtre.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">window</td><td>Render window where the sprite will be drawn. </td></tr>
-    <tr><td class="paramname">tileSize</td><td>Size of each tile (used to calculate position). </td></tr>
-    <tr><td class="paramname">offsetX</td><td>Horizontal offset for drawing. </td></tr>
-    <tr><td class="paramname">offsetY</td><td>Vertical offset for drawing. </td></tr>
+    <tr><td class="paramname">window</td><td>Fenêtre de rendu où dessiner le sprite. </td></tr>
+    <tr><td class="paramname">tileSize</td><td>Taille de chaque tuile (utilisée pour calculer la position). </td></tr>
+    <tr><td class="paramname">offsetX</td><td>Décalage horizontal pour le dessin. </td></tr>
+    <tr><td class="paramname">offsetY</td><td>Décalage vertical pour le dessin. </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,13 +403,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Dessine l’effet de broadcast autour du joueur. </p>
-<p>Draw the broadcast waves effect.</p>
+<p>Dessine l’effet d’ondes de broadcast.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">window</td><td>Render window to draw on. </td></tr>
-    <tr><td class="paramname">x</td><td>X coordinate of the player on screen. </td></tr>
-    <tr><td class="paramname">y</td><td>Y coordinate of the player on screen. </td></tr>
-    <tr><td class="paramname">tileSize</td><td>Size of the tile. </td></tr>
+    <tr><td class="paramname">window</td><td>Fenêtre de rendu sur laquelle dessiner. </td></tr>
+    <tr><td class="paramname">x</td><td>Coordonnée X du joueur à l’écran. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordonnée Y du joueur à l’écran. </td></tr>
+    <tr><td class="paramname">tileSize</td><td>Taille de la tuile. </td></tr>
   </table>
   </dd>
 </dl>
@@ -436,15 +436,15 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retourne la zone de collision du joueur pour la souris. </p>
-<p>Get the bounding box of the player sprite for a given position.</p>
+<p>Retourne le rectangle englobant du sprite du joueur à une position donnée.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">posX</td><td>X coordinate for bounding box center. </td></tr>
-    <tr><td class="paramname">posY</td><td>Y coordinate for bounding box center. </td></tr>
+    <tr><td class="paramname">posX</td><td>Coordonnée X pour le centre du rectangle. </td></tr>
+    <tr><td class="paramname">posY</td><td>Coordonnée Y pour le centre du rectangle. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>sf::FloatRect Bounding rectangle. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>sf::FloatRect Rectangle englobant. </dd></dl>
 
 </div>
 </div>
@@ -491,8 +491,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retourne les informations affichées au survol. </p>
-<p>Get information string about the player for display on hover.</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string Multi-line info about player state. </dd></dl>
+<p>Retourne une chaîne d’information sur le joueur pour l’affichage lors d’un survol.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string Informations multi-lignes sur l’état du joueur. </dd></dl>
 
 </div>
 </div>
@@ -547,8 +547,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retourne le niveau du joueur. </p>
-<p>Get the current level of the player.</p>
-<dl class="section return"><dt>Returns</dt><dd>float Level value. </dd></dl>
+<p>Retourne le niveau actuel du joueur.</p>
+<dl class="section return"><dt>Returns</dt><dd>float Valeur du niveau. </dd></dl>
 
 </div>
 </div>
@@ -587,8 +587,8 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retourne le nom de l'équipe. </p>
-<p>Get the team name of the player.</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string Team name. </dd></dl>
+<p>Retourne le nom de l’équipe du joueur.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string Nom de l’équipe. </dd></dl>
 
 </div>
 </div>
@@ -743,11 +743,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Met à jour l'inventaire du joueur. </p>
-<p>Set the player's inventory.</p>
-<p>Resets the inventory to zero then updates with provided resources.</p>
+<p>Définit l’inventaire du joueur.</p>
+<p>Réinitialise l’inventaire à zéro puis met à jour avec les ressources fournies.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inventory</td><td><a class="el" href="classZappy_1_1Map.html" title="Classe responsable de l&#39;affichage, l&#39;interaction et la gestion de la carte graphique.">Map</a> of resource names and their quantities. </td></tr>
+    <tr><td class="paramname">inventory</td><td>Dictionnaire de ressources et quantités associées. </td></tr>
   </table>
   </dd>
 </dl>
@@ -801,11 +801,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Définit la taille de la carte (utile pour certains calculs) </p>
-<p>Set the size of the map.</p>
+<p>Définit la taille de la carte.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">width</td><td>New map width. </td></tr>
-    <tr><td class="paramname">height</td><td>New map height. </td></tr>
+    <tr><td class="paramname">width</td><td>Nouvelle largeur de la carte. </td></tr>
+    <tr><td class="paramname">height</td><td>Nouvelle hauteur de la carte. </td></tr>
   </table>
   </dd>
 </dl>
@@ -886,7 +886,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Déclenche l’effet de broadcast (animation) </p>
-<p>Trigger the broadcasting animation. </p>
+<p>Déclenche l’animation de broadcast. </p>
 
 </div>
 </div>
@@ -906,7 +906,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Met à jour la texture du sprite en fonction de la direction. </p>
-<p>Update the player's sprite texture based on the direction. </p>
+<p>Met à jour la texture du sprite du joueur en fonction de sa direction. </p>
 
 </div>
 </div>

@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Zappy", "index.html", [
-    [ "🎮 Zappy - Jeu Réseau Multijoueur Inspiré de Zaphod Beeblebrox", "index.html", "index" ],
+    [ "🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [

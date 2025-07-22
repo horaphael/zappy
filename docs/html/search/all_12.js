@@ -41,9 +41,11 @@ var searchData=
   ['setwindow_38',['setWindow',['../classZappy_1_1Player.html#af7a5858843726c930cfa847a098a7058',1,'Zappy::Player']]],
   ['shape_39',['shape',['../classZappy_1_1Map.html#aa91986d8e06209b1b1b3e199a9d933a0',1,'Zappy::Map::shape'],['../classZappy_1_1Tile.html#a1678f7aa631badf755c2bf68cafb139c',1,'Zappy::Tile::shape']]],
   ['sibur_5fdensity_40',['sibur_density',['../structworld__s.html#a773b55a270639a978bb0633f77c2407b',1,'world_s']]],
-  ['south_41',['SOUTH',['../namespaceZappy.html#a5db576a814f90f11b28d884636ed896ba2020d60b5570ee54ac683d37007312c8',1,'Zappy::SOUTH'],['../server_8h.html#a7b6212532f22831f81387f285488dabda8ef5c0bce69283a9986011a63eea8a6b',1,'SOUTH:&#160;server.h']]],
-  ['spawn_5fresources_42',['spawn_resources',['../handle__resources_8c.html#a3c406c85489e0e133dd9653408fbfa6c',1,'spawn_resources(world_t *world, UI height, UI width):&#160;handle_resources.c'],['../server_8h.html#a3c406c85489e0e133dd9653408fbfa6c',1,'spawn_resources(world_t *world, UI height, UI width):&#160;handle_resources.c']]],
-  ['split_43',['split',['../classZappy_1_1ParseServer.html#a05e7cf210ff51443e77327d3a745f8b4',1,'Zappy::ParseServer']]],
-  ['start_44',['start',['../classZappy_1_1ParseServer.html#a707cec08b46c6497167fd0ad5bf08355',1,'Zappy::ParseServer']]],
-  ['stop_45',['stop',['../classZappy_1_1ParseServer.html#aeda6a6941436275fad824ae0d3603e27',1,'Zappy::ParseServer']]]
+  ['simulateur_20_3a_20trantor_41',['🌍 Monde du Simulateur : Trantor',['../index.html#monde',1,'']]],
+  ['simulateur_20réseau_20inspiré_20de_20zaphod_20beeblebrox_42',['🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox',['../index.html',1,'']]],
+  ['south_43',['SOUTH',['../namespaceZappy.html#a5db576a814f90f11b28d884636ed896ba2020d60b5570ee54ac683d37007312c8',1,'Zappy::SOUTH'],['../server_8h.html#a7b6212532f22831f81387f285488dabda8ef5c0bce69283a9986011a63eea8a6b',1,'SOUTH:&#160;server.h']]],
+  ['spawn_5fresources_44',['spawn_resources',['../handle__resources_8c.html#a3c406c85489e0e133dd9653408fbfa6c',1,'spawn_resources(world_t *world, UI height, UI width):&#160;handle_resources.c'],['../server_8h.html#a3c406c85489e0e133dd9653408fbfa6c',1,'spawn_resources(world_t *world, UI height, UI width):&#160;handle_resources.c']]],
+  ['split_45',['split',['../classZappy_1_1ParseServer.html#a05e7cf210ff51443e77327d3a745f8b4',1,'Zappy::ParseServer']]],
+  ['start_46',['start',['../classZappy_1_1ParseServer.html#a707cec08b46c6497167fd0ad5bf08355',1,'Zappy::ParseServer']]],
+  ['stop_47',['stop',['../classZappy_1_1ParseServer.html#aeda6a6941436275fad824ae0d3603e27',1,'Zappy::ParseServer']]]
 ];

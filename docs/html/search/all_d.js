@@ -14,7 +14,6 @@ var searchData=
   ['max_5fclients_11',['MAX_CLIENTS',['../server_8h.html#a0a8f91f93d75a07f0ae45077db45b3eb',1,'server.h']]],
   ['max_5fmap_5fsize_12',['MAX_MAP_SIZE',['../server_8h.html#a0dcaa63464405845211a092cd6d453d3',1,'server.h']]],
   ['mendiane_5fdensity_13',['mendiane_density',['../structworld__s.html#aef1cf179c55a419231a14dc878f22f7d',1,'world_s']]],
-  ['monde_20du_20jeu_20_3a_20trantor_14',['🌍 Monde du jeu : Trantor',['../index.html#monde',1,'']]],
-  ['moving_15',['MOVING',['../namespaceZappy.html#a404d2d05db1882126130d5608e4ef382aa17b651f2c8d6324d61aeed5d6ccff23',1,'Zappy']]],
-  ['multijoueur_20inspiré_20de_20zaphod_20beeblebrox_16',['🎮 Zappy - Jeu Réseau Multijoueur Inspiré de Zaphod Beeblebrox',['../index.html',1,'']]]
+  ['monde_20du_20simulateur_20_3a_20trantor_14',['🌍 Monde du Simulateur : Trantor',['../index.html#monde',1,'']]],
+  ['moving_15',['MOVING',['../namespaceZappy.html#a404d2d05db1882126130d5608e4ef382aa17b651f2c8d6324d61aeed5d6ccff23',1,'Zappy']]]
 ];

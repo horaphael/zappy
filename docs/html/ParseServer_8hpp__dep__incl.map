@@ -1,6 +1,6 @@
 <map id="ParseServer.hpp" name="ParseServer.hpp">
 <area shape="rect" id="Node000001" title="Déclaration de la classe ParseServer." alt="" coords="131,5,250,32"/>
-<area shape="rect" id="Node000002" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du jeu." alt="" coords="96,80,168,107"/>
+<area shape="rect" id="Node000002" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du simulateur." alt="" coords="96,80,168,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,46,144,81,140,78,169,43"/>
 <area shape="rect" id="Node000007" href="$ParseServer_8cpp.html" title=" " alt="" coords="191,80,310,107"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="213,42,242,78,238,81,208,46"/>

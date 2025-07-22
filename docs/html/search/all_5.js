@@ -2,7 +2,7 @@ var searchData=
 [
   ['développer_0',['🔧 Composants à développer',['../index.html#composants',1,'']]],
   ['d’élévation_1',['📈 Rituel d’Élévation',['../index.html#rituel',1,'']]],
-  ['de_20zaphod_20beeblebrox_2',['🎮 Zappy - Jeu Réseau Multijoueur Inspiré de Zaphod Beeblebrox',['../index.html',1,'']]],
+  ['de_20zaphod_20beeblebrox_2',['🎮 Zappy - Simulateur Réseau Inspiré de Zaphod Beeblebrox',['../index.html',1,'']]],
   ['delete_5fplayer_5ffrom_5flist_3',['delete_player_from_list',['../destroy__player_8c.html#a2d8092ed5c685b50b3d3ecfdcacc037e',1,'destroy_player.c']]],
   ['deraumere_5fdensity_4',['deraumere_density',['../structworld__s.html#a8bef4025a0b73a22ab5f415ede21590c',1,'world_s']]],
   ['destroy_5fplayer_2ec_5',['destroy_player.c',['../destroy__player_8c.html',1,'']]],
@@ -19,6 +19,6 @@ var searchData=
   ['drawhoverpopup_16',['drawHoverPopup',['../classZappy_1_1Map.html#a43fe8672576981acccc91ef8cb3b4bcb',1,'Zappy::Map']]],
   ['drawincantation_17',['drawIncantation',['../classZappy_1_1Tile.html#a46ab9e380be0c28aa1fdbb29bd5059d9',1,'Zappy::Tile']]],
   ['drawresources_18',['drawResources',['../classZappy_1_1Tile.html#a04cee320d670db80f02d59371bd673e5',1,'Zappy::Tile']]],
-  ['du_20jeu_20_3a_20trantor_19',['🌍 Monde du jeu : Trantor',['../index.html#monde',1,'']]],
-  ['du_20projet_20',['Objectif du projet',['../index.html#objectif',1,'']]]
+  ['du_20projet_19',['Objectif du projet',['../index.html#objectif',1,'']]],
+  ['du_20simulateur_20_3a_20trantor_20',['🌍 Monde du Simulateur : Trantor',['../index.html#monde',1,'']]]
 ];

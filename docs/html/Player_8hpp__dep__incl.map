@@ -6,11 +6,11 @@
 <area shape="poly" id="edge17_Node000001_Node000004" title=" " alt="" coords="316,33,224,54,122,84,77,103,41,123,16,144,10,155,8,167,8,244,10,265,17,285,39,323,66,354,92,376,88,380,63,358,35,326,12,288,5,266,3,244,3,166,5,154,12,141,38,118,75,98,121,79,222,49,314,28"/>
 <area shape="rect" id="Node000007" href="$Map_8cpp.html" title=" " alt="" coords="218,379,289,405"/>
 <area shape="poly" id="edge18_Node000001_Node000007" title=" " alt="" coords="430,30,482,48,534,75,556,93,574,114,586,139,591,166,591,244,589,293,581,313,564,333,544,346,514,357,439,374,357,385,290,391,289,386,357,379,438,368,513,352,541,341,561,329,577,310,584,292,585,244,585,167,581,140,570,117,553,97,531,80,480,53,428,35"/>
-<area shape="rect" id="Node000008" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du jeu." alt="" coords="144,304,216,331"/>
+<area shape="rect" id="Node000008" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du simulateur." alt="" coords="144,304,216,331"/>
 <area shape="poly" id="edge19_Node000001_Node000008" title=" " alt="" coords="319,40,279,59,237,84,198,116,169,156,158,182,156,204,163,255,177,303,172,304,157,257,150,204,153,180,164,153,194,112,233,79,276,54,317,36"/>
 <area shape="rect" id="Node000009" href="$ParseServer_8hpp.html" title="Déclaration de la classe ParseServer." alt="" coords="433,229,551,256"/>
 <area shape="poly" id="edge20_Node000001_Node000009" title=" " alt="" coords="390,44,452,153,489,228,484,230,447,156,385,47"/>
-<area shape="rect" id="Node000011" href="$Tile_8hpp.html" title="Header file for the Tile class." alt="" coords="338,155,406,181"/>
+<area shape="rect" id="Node000011" href="$Tile_8hpp.html" title="Fichier d&#39;en&#45;tête pour la classe Tile." alt="" coords="338,155,406,181"/>
 <area shape="poly" id="edge22_Node000001_Node000011" title=" " alt="" coords="375,48,375,154,369,154,369,48"/>
 <area shape="rect" id="Node000013" href="$Player_8cpp.html" title=" " alt="" coords="625,80,708,107"/>
 <area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="429,31,625,79,624,84,428,36"/>

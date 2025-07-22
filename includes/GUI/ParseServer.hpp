@@ -3,7 +3,7 @@
  * @brief Déclaration de la classe ParseServer
  * 
  * ParseServer est responsable de la réception et du traitement des commandes envoyées par le serveur.
- * Elle met à jour les entités du jeu (joueurs, œufs, tuiles...) côté graphique.
+ * Elle met à jour les entités du simulateur (joueurs, œufs, tuiles...) côté graphique.
  */
 
 #ifndef PARSESERVER_HPP

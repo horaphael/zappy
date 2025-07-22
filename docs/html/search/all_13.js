@@ -19,7 +19,7 @@ var searchData=
   ['time_5fcommands_2ec_16',['time_commands.c',['../time__commands_8c.html',1,'']]],
   ['timer_17',['timer',['../classZappy_1_1Egg.html#aa311ef481819a9e993f8961030ab4540',1,'Zappy::Egg']]],
   ['total_5fplace_18',['total_place',['../structteam__s.html#a4b63af8de23c197f046b0017625d770e',1,'team_s']]],
-  ['trantor_19',['🌍 Monde du jeu : Trantor',['../index.html#monde',1,'']]],
+  ['trantor_19',['🌍 Monde du Simulateur : Trantor',['../index.html#monde',1,'']]],
   ['triggerbroadcast_20',['triggerBroadcast',['../classZappy_1_1Player.html#a128ccfc44ee80e77ce4d397f56993efd',1,'Zappy::Player']]],
   ['turn_5fplayer_2ec_21',['turn_player.c',['../turn__player_8c.html',1,'']]],
   ['type_22',['type',['../structclient__s.html#a810faa664442b062d3fd9f4ed21fda70',1,'client_s']]]

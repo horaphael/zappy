@@ -100,7 +100,7 @@ $(function(){initNavTree('classZappy_1_1GUI.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 
-<p>Classe principale pour gérer l'interface graphique du jeu <a class="el" href="namespaceZappy.html">Zappy</a>.  
+<p>Classe principale pour gérer l'interface graphique de la simulation <a class="el" href="namespaceZappy.html">Zappy</a>.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Gui_8hpp_source.html">Gui.hpp</a>&gt;</code></p>
@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a693938eba8f647ecb7e811a144658675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Établit la connexion réseau avec le serveur.  <br /></td></tr>
 <tr class="separator:a693938eba8f647ecb7e811a144658675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1cae1f0976d9b1a7ba7fef6e5655466" id="r_ac1cae1f0976d9b1a7ba7fef6e5655466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1cae1f0976d9b1a7ba7fef6e5655466">run_game</a> ()</td></tr>
-<tr class="memdesc:ac1cae1f0976d9b1a7ba7fef6e5655466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance la boucle du jeu et le rendu de la carte.  <br /></td></tr>
+<tr class="memdesc:ac1cae1f0976d9b1a7ba7fef6e5655466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance la boucle de la simulation et le rendu de la carte.  <br /></td></tr>
 <tr class="separator:ac1cae1f0976d9b1a7ba7fef6e5655466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affb26634785ee51b5c68e1f3e463a6fd" id="r_affb26634785ee51b5c68e1f3e463a6fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affb26634785ee51b5c68e1f3e463a6fd">render</a> ()</td></tr>
 <tr class="memdesc:affb26634785ee51b5c68e1f3e463a6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère l'affichage graphique à chaque frame.  <br /></td></tr>
@@ -150,10 +150,10 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a6ebe60c92a93b43f4bdcc830ab986754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hauteur de la carte (valeur par défaut)  <br /></td></tr>
 <tr class="separator:a6ebe60c92a93b43f4bdcc830ab986754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87adeb808ccc371a0f70e6c4828635b5" id="r_a87adeb808ccc371a0f70e6c4828635b5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classZappy_1_1Map.html">Map</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87adeb808ccc371a0f70e6c4828635b5">_map</a></td></tr>
-<tr class="memdesc:a87adeb808ccc371a0f70e6c4828635b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carte du jeu affichée.  <br /></td></tr>
+<tr class="memdesc:a87adeb808ccc371a0f70e6c4828635b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carte de la simulation affichée.  <br /></td></tr>
 <tr class="separator:a87adeb808ccc371a0f70e6c4828635b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33eb60ad52e015481ce96d605e2363e6" id="r_a33eb60ad52e015481ce96d605e2363e6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classZappy_1_1ParseServer.html">ParseServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33eb60ad52e015481ce96d605e2363e6">_parser</a></td></tr>
-<tr class="memdesc:a33eb60ad52e015481ce96d605e2363e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parseur pour traiter les messages serveur.  <br /></td></tr>
+<tr class="memdesc:a33eb60ad52e015481ce96d605e2363e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parseur pour traiter les messages du serveur.  <br /></td></tr>
 <tr class="separator:a33eb60ad52e015481ce96d605e2363e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fd6d79525ca4e709c0b1df1e7b07cf3" id="r_a2fd6d79525ca4e709c0b1df1e7b07cf3"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fd6d79525ca4e709c0b1df1e7b07cf3">_parserThread</a></td></tr>
 <tr class="memdesc:a2fd6d79525ca4e709c0b1df1e7b07cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread séparé pour le parsing.  <br /></td></tr>
@@ -174,14 +174,14 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a9c12108c27b90837580da1235919604c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Police pour l'affichage de texte.  <br /></td></tr>
 <tr class="separator:a9c12108c27b90837580da1235919604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ca62a47f649aefd8b4f959f36eecc2" id="r_ae7ca62a47f649aefd8b4f959f36eecc2"><td class="memItemLeft" align="right" valign="top">sf::Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7ca62a47f649aefd8b4f959f36eecc2">_timerText</a></td></tr>
-<tr class="memdesc:ae7ca62a47f649aefd8b4f959f36eecc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texte affichant un timer.  <br /></td></tr>
+<tr class="memdesc:ae7ca62a47f649aefd8b4f959f36eecc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texte affichant un minuteur.  <br /></td></tr>
 <tr class="separator:ae7ca62a47f649aefd8b4f959f36eecc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244f771e2ddb937bb5ec523607fd53f6" id="r_a244f771e2ddb937bb5ec523607fd53f6"><td class="memItemLeft" align="right" valign="top">sf::Clock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a244f771e2ddb937bb5ec523607fd53f6">_gameClock</a></td></tr>
 <tr class="memdesc:a244f771e2ddb937bb5ec523607fd53f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horloge pour gérer le temps écoulé  <br /></td></tr>
 <tr class="separator:a244f771e2ddb937bb5ec523607fd53f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Classe principale pour gérer l'interface graphique du jeu <a class="el" href="namespaceZappy.html">Zappy</a>. </p>
+<div class="textblock"><p>Classe principale pour gérer l'interface graphique de la simulation <a class="el" href="namespaceZappy.html">Zappy</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae78093746a7c0e69876d496cdcb67b26" name="ae78093746a7c0e69876d496cdcb67b26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae78093746a7c0e69876d496cdcb67b26">&#9670;&#160;</a></span>GUI()</h2>
@@ -404,8 +404,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Lance la boucle du jeu et le rendu de la carte. </p>
-<p>Boucle principale du jeu.</p>
+<p>Lance la boucle de la simulation et le rendu de la carte. </p>
+<p>Boucle principale du simulateur.</p>
 <p>Traite les événements, met à jour la carte, dessine la scène et le timer. </p>
 
 </div>
@@ -438,7 +438,7 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<p>Envoie le message "GRAPHIC" pour s'identifier comme client <a class="el" href="classZappy_1_1GUI.html" title="Classe principale pour gérer l&#39;interface graphique du jeu Zappy.">GUI</a>.</p>
+<p>Envoie le message "GRAPHIC" pour s'identifier comme client <a class="el" href="classZappy_1_1GUI.html" title="Classe principale pour gérer l&#39;interface graphique de la simulation Zappy.">GUI</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>Port du serveur. </td></tr>
@@ -626,7 +626,7 @@ false si le socket n'existe pas ou en cas d'échec. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Carte du jeu affichée. </p>
+<p>Carte de la simulation affichée. </p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ false si le socket n'existe pas ou en cas d'échec. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Parseur pour traiter les messages serveur. </p>
+<p>Parseur pour traiter les messages du serveur. </p>
 
 </div>
 </div>
@@ -818,7 +818,7 @@ false si le socket n'existe pas ou en cas d'échec. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Texte affichant un timer. </p>
+<p>Texte affichant un minuteur. </p>
 
 </div>
 </div>

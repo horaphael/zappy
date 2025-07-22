@@ -106,7 +106,7 @@ void Zappy::GUI::render()
 }
 
 /**
- * @brief Boucle principale du jeu.
+ * @brief Boucle principale du simulateur.
  * Traite les événements, met à jour la carte, dessine la scène et le timer.
  */
 void Zappy::GUI::run_game()

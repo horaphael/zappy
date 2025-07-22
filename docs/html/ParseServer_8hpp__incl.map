@@ -24,7 +24,7 @@
 <area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="874,20,1091,38,1231,54,1375,77,1375,83,1230,59,1091,43,873,26"/>
 <area shape="rect" id="Node000013" title=" " alt="" coords="960,229,1094,256"/>
 <area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="828,31,1007,217,1003,220,824,34"/>
-<area shape="rect" id="Node000014" href="$Tile_8hpp.html" title="Header file for the Tile class." alt="" coords="184,80,252,107"/>
+<area shape="rect" id="Node000014" href="$Tile_8hpp.html" title="Fichier d&#39;en&#45;tête pour la classe Tile." alt="" coords="184,80,252,107"/>
 <area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="754,29,307,83,267,88,266,83,307,77,754,24"/>
 <area shape="rect" id="Node000016" href="$Player_8hpp.html" title="Déclaration de la classe Player pour l&#39;interface graphique du projet Zappy." alt="" coords="176,229,260,256"/>
 <area shape="poly" id="edge33_Node000001_Node000016" title=" " alt="" coords="755,31,651,50,593,65,536,83,454,116,374,155,252,223,249,219,372,150,452,111,534,77,592,60,650,45,754,26"/>
