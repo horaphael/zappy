@@ -2,7 +2,7 @@ var searchData=
 [
   ['handle_5fclient_5fdata_0',['handle_client_data',['../handle__clients_8c.html#acd84d1ac8fc2e506fed47e9cde6f9b0c',1,'handle_client_data(global_t *global, int i):&#160;handle_clients.c'],['../server_8h.html#acd84d1ac8fc2e506fed47e9cde6f9b0c',1,'handle_client_data(global_t *global, int i):&#160;handle_clients.c']]],
   ['handle_5fclients_2ec_1',['handle_clients.c',['../handle__clients_8c.html',1,'']]],
-  ['handle_5fia_5fcommand_2',['handle_ia_command',['../handle__ia__command_8c.html#af64b263077f03632559c59a341561625',1,'handle_ia_command(global_t *global, int client_id, char *input):&#160;handle_ia_command.c'],['../server_8h.html#af64b263077f03632559c59a341561625',1,'handle_ia_command(global_t *global, int client_id, char *input):&#160;handle_ia_command.c']]],
+  ['handle_5fia_5fcommand_2',['handle_ia_command',['../server_8h.html#af64b263077f03632559c59a341561625',1,'handle_ia_command(global_t *global, int client_id, char *input):&#160;handle_ia_command.c'],['../handle__ia__command_8c.html#af64b263077f03632559c59a341561625',1,'handle_ia_command(global_t *global, int client_id, char *input):&#160;handle_ia_command.c']]],
   ['handle_5fia_5fcommand_2ec_3',['handle_ia_command.c',['../handle__ia__command_8c.html',1,'']]],
   ['handle_5fresources_2ec_4',['handle_resources.c',['../handle__resources_8c.html',1,'']]],
   ['handle_5fteams_2ec_5',['handle_teams.c',['../handle__teams_8c.html',1,'']]],

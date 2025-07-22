@@ -1,7 +1,7 @@
 <map id="accept_connexion" name="accept_connexion">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,132,32"/>
-<area shape="rect" id="Node000002" href="$connexion_8c.html#ac92fe867ee0520480b4ed26df3bba442" title=" " alt="" coords="180,5,297,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,16,164,16,164,21,132,21"/>
-<area shape="rect" id="Node000003" href="$init__struct_8c.html#afdfbb5c2d2e4a0daeee689d2619da93f" title=" " alt="" coords="345,5,421,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,16,329,16,329,21,297,21"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,144,31"/>
+<area shape="rect" id="Node000002" href="$connexion_8c.html#ac92fe867ee0520480b4ed26df3bba442" title=" " alt="" coords="192,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
+<area shape="rect" id="Node000003" href="$init__struct_8c.html#afdfbb5c2d2e4a0daeee689d2619da93f" title=" " alt="" coords="371,5,457,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,15,357,15,357,21,323,21"/>
 </map>

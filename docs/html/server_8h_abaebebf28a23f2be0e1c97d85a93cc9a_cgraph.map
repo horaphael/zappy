@@ -1,9 +1,9 @@
 <map id="cmd_set" name="cmd_set">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,77,83"/>
-<area shape="rect" id="Node000002" href="$player__utils_8c.html#a85a8599dc1b087d2a4266765aa94c07c" title=" " alt="" coords="125,5,282,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,56,143,35,145,40,78,61"/>
-<area shape="rect" id="Node000003" href="$take_8c.html#a8ea99c2c03b79d009ddecc85f177232d" title=" " alt="" coords="143,56,264,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="77,67,128,67,128,72,77,72"/>
-<area shape="rect" id="Node000004" href="$resources__commands_8c.html#af38c839b41241a62deda8e58329de224" title=" " alt="" coords="166,107,241,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="78,78,152,101,151,106,76,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,83,80"/>
+<area shape="rect" id="Node000002" href="$player__utils_8c.html#a85a8599dc1b087d2a4266765aa94c07c" title=" " alt="" coords="131,5,307,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,54,130,39,157,32,159,37,131,45,83,59"/>
+<area shape="rect" id="Node000003" href="$take_8c.html#a8ea99c2c03b79d009ddecc85f177232d" title=" " alt="" coords="153,55,285,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,65,139,65,139,70,83,70"/>
+<area shape="rect" id="Node000004" href="$resources__commands_8c.html#af38c839b41241a62deda8e58329de224" title=" " alt="" coords="178,104,259,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,76,166,99,164,104,82,81"/>
 </map>

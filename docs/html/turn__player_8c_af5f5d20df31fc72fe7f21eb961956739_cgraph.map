@@ -1,7 +1,7 @@
 <map id="cmd_turn" name="cmd_turn">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,81,57"/>
-<area shape="rect" id="Node000002" href="$player__utils_8c.html#a85a8599dc1b087d2a4266765aa94c07c" title=" " alt="" coords="129,5,286,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,36,113,31,114,36,81,41"/>
-<area shape="rect" id="Node000003" href="$player__commands_8c.html#afbc19a11fa839b8f02eb0e4b1db95acc" title=" " alt="" coords="169,56,246,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="81,47,154,58,153,64,81,52"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,88,56"/>
+<area shape="rect" id="Node000002" href="$player__utils_8c.html#a85a8599dc1b087d2a4266765aa94c07c" title=" " alt="" coords="136,5,312,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,35,122,30,123,35,88,40"/>
+<area shape="rect" id="Node000003" href="$player__commands_8c.html#afbc19a11fa839b8f02eb0e4b1db95acc" title=" " alt="" coords="182,55,266,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,46,168,57,168,62,88,51"/>
 </map>

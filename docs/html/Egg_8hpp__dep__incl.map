@@ -1,28 +1,28 @@
 <map id="Egg.hpp" name="Egg.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="176,5,245,32"/>
-<area shape="rect" id="Node000002" href="$Egg_8cpp.html" title=" " alt="" coords="5,80,75,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,41,71,82,69,77,166,36"/>
-<area shape="rect" id="Node000003" href="$Gui_8hpp.html" title=" " alt="" coords="107,304,173,331"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,48,146,304,140,303,202,46"/>
-<area shape="rect" id="Node000006" href="$Map_8cpp.html" title=" " alt="" coords="224,304,296,331"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="262,27,315,42,374,66,403,83,431,103,455,126,474,153,488,181,493,206,489,231,474,258,462,268,444,278,397,293,297,314,296,308,396,288,442,273,459,264,470,254,484,230,488,206,483,183,470,156,451,130,427,107,400,88,372,71,313,47,260,32"/>
-<area shape="rect" id="Node000007" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du simulateur." alt="" coords="178,229,249,256"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="214,47,216,229,211,229,208,47"/>
-<area shape="rect" id="Node000008" href="$ParseServer_8hpp.html" title="Déclaration de la classe ParseServer." alt="" coords="342,155,461,181"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="246,38,306,78,353,118,390,152,387,156,350,122,302,82,243,42"/>
-<area shape="rect" id="Node000010" href="$Tile_8hpp.html" title="Fichier d&#39;en&#45;tête pour la classe Tile." alt="" coords="225,80,292,107"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="230,44,253,78,248,81,225,47"/>
-<area shape="rect" id="Node000004" href="$Gui_8cpp.html" title=" " alt="" coords="60,379,127,405"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,345,104,380,99,377,121,342"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html" title=" " alt="" coords="151,379,225,405"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="159,342,182,377,178,380,155,345"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="192,269,154,306,151,302,188,265"/>
-<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="232,268,254,302,250,305,227,271"/>
-<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="355,190,247,231,245,226,353,185"/>
-<area shape="rect" id="Node000009" href="$ParseServer_8cpp.html" title=" " alt="" coords="342,229,461,256"/>
-<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="404,197,404,229,399,229,399,197"/>
-<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="252,122,241,155,219,230,214,228,236,154,247,120"/>
-<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="298,112,377,152,375,156,296,116"/>
-<area shape="rect" id="Node000011" href="$Tile_8cpp.html" title=" " alt="" coords="250,155,318,181"/>
-<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="271,120,282,153,277,155,266,122"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="179,5,254,31"/>
+<area shape="rect" id="Node000002" href="$Egg_8cpp.html" title=" " alt="" coords="5,79,79,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,38,72,81,70,76,175,33"/>
+<area shape="rect" id="Node000003" href="$Gui_8hpp.html" title=" " alt="" coords="107,299,179,324"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,44,149,299,144,298,208,43"/>
+<area shape="rect" id="Node000006" href="$Map_8cpp.html" title=" " alt="" coords="229,299,306,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="268,24,324,38,388,62,419,79,448,99,474,123,495,151,503,169,509,194,507,223,493,252,481,263,462,273,413,289,307,308,306,303,411,283,460,268,478,259,489,249,502,222,503,195,498,170,490,153,470,126,445,103,416,83,385,67,323,43,267,30"/>
+<area shape="rect" id="Node000007" href="$Map_8hpp.html" title="Déclaration de la classe Map pour gérer l&#39;affichage et l&#39;interaction avec la carte du simulateur." alt="" coords="179,225,257,251"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="219,45,221,225,215,225,214,45"/>
+<area shape="rect" id="Node000008" href="$ParseServer_8hpp.html" title="Déclaration de la classe ParseServer." alt="" coords="353,152,480,177"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="252,35,318,76,368,116,406,150,403,154,364,120,315,81,249,40"/>
+<area shape="rect" id="Node000010" href="$Tile_8hpp.html" title="Fichier d&#39;en&#45;tête pour la classe Tile." alt="" coords="230,79,305,104"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="235,41,261,77,257,80,231,44"/>
+<area shape="rect" id="Node000004" href="$Gui_8cpp.html" title=" " alt="" coords="57,372,128,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="129,337,103,373,99,370,125,334"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title=" " alt="" coords="153,372,235,397"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="162,334,188,370,184,373,158,337"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="198,262,157,300,154,297,194,258"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="236,261,262,297,257,300,232,264"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="373,184,251,228,250,223,371,179"/>
+<area shape="rect" id="Node000009" href="$ParseServer_8cpp.html" title=" " alt="" coords="354,225,479,251"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="419,191,419,225,414,225,414,191"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="259,118,246,153,224,226,219,224,241,151,254,116"/>
+<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="305,107,393,149,391,154,302,112"/>
+<area shape="rect" id="Node000011" href="$Tile_8cpp.html" title=" " alt="" coords="256,152,329,177"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="279,116,291,151,286,153,274,118"/>
 </map>

@@ -18,7 +18,7 @@ var searchData=
   ['init_5fserver_15',['init_server',['../zappy__server_8c.html#abefda439332e4cadcec901cace2f4ce3',1,'zappy_server.c']]],
   ['init_5fserver_5fstruct_16',['init_server_struct',['../init__struct_8c.html#a43f635f9b12ff5ddacba3bdaedac4b5b',1,'init_struct.c']]],
   ['init_5fstruct_2ec_17',['init_struct.c',['../init__struct_8c.html',1,'']]],
-  ['init_5fteams_18',['init_teams',['../init__struct_8c.html#ade9f931f7462fc50d6b18bbb893a3d56',1,'init_teams(global_t *global):&#160;init_struct.c'],['../server_8h.html#ade9f931f7462fc50d6b18bbb893a3d56',1,'init_teams(global_t *global):&#160;init_struct.c']]],
+  ['init_5fteams_18',['init_teams',['../server_8h.html#ade9f931f7462fc50d6b18bbb893a3d56',1,'init_teams(global_t *global):&#160;init_struct.c'],['../init__struct_8c.html#ade9f931f7462fc50d6b18bbb893a3d56',1,'init_teams(global_t *global):&#160;init_struct.c']]],
   ['init_5ftile_19',['init_tile',['../init__map_8c.html#aaec71d340cd2221ca9ed2e6ccbfd6985',1,'init_map.c']]],
   ['init_5fworld_5fstruct_20',['init_world_struct',['../init__struct_8c.html#aa41e98f2f17e287cb44d931309733dc4',1,'init_struct.c']]],
   ['initcommandmap_21',['initCommandMap',['../classZappy_1_1ParseServer.html#aae257c11a873ec5753aac191fb02452b',1,'Zappy::ParseServer']]],

@@ -1,9 +1,9 @@
 <map id="disconnect_client" name="disconnect_client">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,128,69"/>
-<area shape="rect" id="Node000002" href="$destroy__player_8c.html#ac699e1b6c4a4b426fc6d8470a7448377" title=" " alt="" coords="176,5,315,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,43,159,38,160,43,128,49"/>
-<area shape="rect" id="Node000004" href="$player__commands_8c.html#a352ac43cee86a4e294a14cd09b24597e" title=" " alt="" coords="209,72,282,99"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="128,63,194,74,193,80,128,69"/>
-<area shape="rect" id="Node000003" href="$destroy__player_8c.html#a2d8092ed5c685b50b3d3ecfdcacc037e" title=" " alt="" coords="363,13,518,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="315,24,347,24,347,29,315,29"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,140,67"/>
+<area shape="rect" id="Node000002" href="$destroy__player_8c.html#ac699e1b6c4a4b426fc6d8470a7448377" title=" " alt="" coords="188,5,347,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,42,174,37,175,42,140,47"/>
+<area shape="rect" id="Node000004" href="$player__commands_8c.html#a352ac43cee86a4e294a14cd09b24597e" title=" " alt="" coords="227,70,307,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,62,214,72,213,78,140,67"/>
+<area shape="rect" id="Node000003" href="$destroy__player_8c.html#a2d8092ed5c685b50b3d3ecfdcacc037e" title=" " alt="" coords="395,13,571,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,23,381,23,381,28,347,28"/>
 </map>

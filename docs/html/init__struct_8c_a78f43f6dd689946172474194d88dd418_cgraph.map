@@ -1,11 +1,11 @@
 <map id="init_global_struct" name="init_global_struct">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,125,108"/>
-<area shape="rect" id="Node000002" href="$free_8c.html#a2d544d30b0dcb14cd653133dfc750379" title=" " alt="" coords="202,5,265,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,78,172,42,186,35,188,40,174,46,96,83"/>
-<area shape="rect" id="Node000003" href="$init__struct_8c.html#af91c4f6cc727c9d51ff4308fe4b76496" title=" " alt="" coords="180,56,287,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,83,164,77,165,82,126,88"/>
-<area shape="rect" id="Node000004" href="$init__struct_8c.html#a43f635f9b12ff5ddacba3bdaedac4b5b" title=" " alt="" coords="173,107,294,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,101,158,106,157,111,125,106"/>
-<area shape="rect" id="Node000005" href="$init__struct_8c.html#aa41e98f2f17e287cb44d931309733dc4" title=" " alt="" coords="175,157,292,184"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="96,106,174,143,186,148,184,153,172,148,93,111"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,140,105"/>
+<area shape="rect" id="Node000002" href="$free_8c.html#a2d544d30b0dcb14cd653133dfc750379" title=" " alt="" coords="220,5,291,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,77,187,40,206,32,208,37,189,44,102,82"/>
+<area shape="rect" id="Node000003" href="$init__struct_8c.html#af91c4f6cc727c9d51ff4308fe4b76496" title=" " alt="" coords="196,55,315,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,81,182,75,183,80,140,86"/>
+<area shape="rect" id="Node000004" href="$init__struct_8c.html#a43f635f9b12ff5ddacba3bdaedac4b5b" title=" " alt="" coords="188,104,323,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,99,175,103,174,109,140,104"/>
+<area shape="rect" id="Node000005" href="$init__struct_8c.html#aa41e98f2f17e287cb44d931309733dc4" title=" " alt="" coords="190,153,321,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="104,103,189,138,209,146,207,151,187,143,102,108"/>
 </map>

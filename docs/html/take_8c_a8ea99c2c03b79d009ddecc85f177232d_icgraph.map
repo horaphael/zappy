@@ -1,9 +1,9 @@
 <map id="get_ressource_id" name="get_ressource_id">
-<area shape="rect" id="Node000001" title=" " alt="" coords="308,31,428,57"/>
-<area shape="rect" id="Node000002" href="$set_8c.html#abaebebf28a23f2be0e1c97d85a93cc9a" title=" " alt="" coords="160,5,232,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,36,232,27,232,21,293,30"/>
-<area shape="rect" id="Node000003" href="$take_8c.html#a2810de060ecea9b1e39e86677687f198" title=" " alt="" coords="132,56,260,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,58,261,63,260,57,292,52"/>
-<area shape="rect" id="Node000004" href="$take_8c.html#acbef0fc18245402f4947a187c323626b" title=" " alt="" coords="5,56,84,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,72,84,72,84,67,116,67"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="329,31,461,56"/>
+<area shape="rect" id="Node000002" href="$set_8c.html#abaebebf28a23f2be0e1c97d85a93cc9a" title=" " alt="" coords="171,5,249,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="315,35,249,26,249,21,316,30"/>
+<area shape="rect" id="Node000003" href="$take_8c.html#a2810de060ecea9b1e39e86677687f198" title=" " alt="" coords="139,55,281,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,56,282,61,281,55,315,51"/>
+<area shape="rect" id="Node000004" href="$take_8c.html#acbef0fc18245402f4947a187c323626b" title=" " alt="" coords="5,55,91,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,70,91,70,91,65,125,65"/>
 </map>

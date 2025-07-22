@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['parseserver_0',['ParseServer',['../classZappy_1_1ParseServer.html',1,'Zappy::ParseServer'],['../classZappy_1_1ParseServer.html#aaa63c129da10161a52caed4154c47347',1,'Zappy::ParseServer::ParseServer()']]],
+  ['parseserver_0',['parseserver',['../classZappy_1_1ParseServer.html',1,'Zappy::ParseServer'],['../classZappy_1_1ParseServer.html#aaa63c129da10161a52caed4154c47347',1,'Zappy::ParseServer::ParseServer()']]],
   ['parseserver_2ecpp_1',['ParseServer.cpp',['../ParseServer_8cpp.html',1,'']]],
   ['parseserver_2ehpp_2',['ParseServer.hpp',['../ParseServer_8hpp.html',1,'']]],
   ['pfds_3',['pfds',['../structserver__s.html#af270da2c8f813fcb8260123ea26bdeb6',1,'server_s']]],
   ['phiras_5fdensity_4',['phiras_density',['../structworld__s.html#ab82aab823f49bca05f793304e2af6658',1,'world_s']]],
-  ['player_5',['Player',['../classZappy_1_1Player.html',1,'Zappy::Player'],['../classZappy_1_1Player.html#a7848a1a50c52260bb7f852794416702d',1,'Zappy::Player::Player()']]],
+  ['player_5',['player',['../classZappy_1_1Player.html',1,'Zappy::Player'],['../classZappy_1_1Player.html#a7848a1a50c52260bb7f852794416702d',1,'Zappy::Player::Player()']]],
   ['player_2ecpp_6',['Player.cpp',['../Player_8cpp.html',1,'']]],
   ['player_2ehpp_7',['Player.hpp',['../Player_8hpp.html',1,'']]],
   ['player_5fcommands_2ec_8',['player_commands.c',['../player__commands_8c.html',1,'']]],
@@ -13,7 +13,7 @@ var searchData=
   ['player_5ft_10',['player_t',['../server_8h.html#aefdc4a36eee5199c976dfc9566db77bf',1,'server.h']]],
   ['player_5futils_2ec_11',['player_utils.c',['../player__utils_8c.html',1,'']]],
   ['players_12',['players',['../structtile__s.html#af258cd7f31a22a9a224a1ab31737403a',1,'tile_s::players'],['../structworld__s.html#a0c16b47f5baff8adb9318fc37bba4c83',1,'world_s::players']]],
-  ['poll_5fconnexion_13',['poll_connexion',['../connexion_8c.html#ad4483fb17bea0e2f370ca40fe4b34a31',1,'poll_connexion(global_t *global, int *nfds):&#160;connexion.c'],['../server_8h.html#ad4483fb17bea0e2f370ca40fe4b34a31',1,'poll_connexion(global_t *global, int *nfds):&#160;connexion.c']]],
+  ['poll_5fconnexion_13',['poll_connexion',['../server_8h.html#ad4483fb17bea0e2f370ca40fe4b34a31',1,'poll_connexion(global_t *global, int *nfds):&#160;connexion.c'],['../connexion_8c.html#ad4483fb17bea0e2f370ca40fe4b34a31',1,'poll_connexion(global_t *global, int *nfds):&#160;connexion.c']]],
   ['port_14',['port',['../structflags__s.html#af90f2e87789bd3d7bd5768c728c9b456',1,'flags_s']]],
   ['pos_5fs_15',['pos_s',['../structpos__s.html',1,'']]],
   ['pos_5ft_16',['pos_t',['../server_8h.html#a95242ccb4b2771e6ce43cde8d809566f',1,'server.h']]],

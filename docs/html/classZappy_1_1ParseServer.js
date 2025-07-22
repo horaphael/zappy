@@ -43,7 +43,7 @@ var classZappy_1_1ParseServer =
     [ "stop", "classZappy_1_1ParseServer.html#aeda6a6941436275fad824ae0d3603e27", null ],
     [ "updateTile", "classZappy_1_1ParseServer.html#ab3eb48bdcd332c1d06fe4b0306802500", null ],
     [ "_bctNb", "classZappy_1_1ParseServer.html#aa09d2acbe3e6ed8dc9f3e355777b3445", null ],
-    [ "_commands", "classZappy_1_1ParseServer.html#a82e6af2851a3ae94a8a838d404dcf9c8", null ],
+    [ "_commands", "classZappy_1_1ParseServer.html#aaaaa3b3ba76a939a57466f9576c44713", null ],
     [ "_eggs", "classZappy_1_1ParseServer.html#ae098218673f5a74cbb0c857b9f9c6fee", null ],
     [ "_gameOver", "classZappy_1_1ParseServer.html#a2b7db3ed1b33399f4824a23818dce2a8", null ],
     [ "_mapHeight", "classZappy_1_1ParseServer.html#ab0db33d65f688faae0079eb9853c111c", null ],

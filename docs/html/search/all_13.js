@@ -11,7 +11,7 @@ var searchData=
   ['teams_8',['teams',['../structworld__s.html#acf75eb89221f527c38902b9313fb0f68',1,'world_s']]],
   ['teams_5fname_9',['teams_name',['../structflags__s.html#a8f8704147951cb447cd5835896df8faf',1,'flags_s']]],
   ['thystame_5fdensity_10',['thystame_density',['../structworld__s.html#a278a39cb3b3886cb45aeb49afa458dc8',1,'world_s']]],
-  ['tile_11',['Tile',['../classZappy_1_1Tile.html',1,'Zappy::Tile'],['../classZappy_1_1Tile.html#a91e0f1d04c699473f72d0b8a181238e1',1,'Zappy::Tile::Tile()=default'],['../classZappy_1_1Tile.html#ad52abb03442b6caacc4d1087987d0f68',1,'Zappy::Tile::Tile(int x, int y, int size)']]],
+  ['tile_11',['tile',['../classZappy_1_1Tile.html',1,'Zappy::Tile'],['../classZappy_1_1Tile.html#ad52abb03442b6caacc4d1087987d0f68',1,'Zappy::Tile::Tile(int x, int y, int size)'],['../classZappy_1_1Tile.html#a91e0f1d04c699473f72d0b8a181238e1',1,'Zappy::Tile::Tile()=default']]],
   ['tile_2ecpp_12',['Tile.cpp',['../Tile_8cpp.html',1,'']]],
   ['tile_2ehpp_13',['Tile.hpp',['../Tile_8hpp.html',1,'']]],
   ['tile_5fs_14',['tile_s',['../structtile__s.html',1,'']]],

@@ -1,9 +1,9 @@
 <map id="init_teams" name="init_teams">
-<area shape="rect" id="Node000001" title=" " alt="" coords="410,5,492,32"/>
-<area shape="rect" id="Node000002" href="$zappy__server_8c.html#a4e0e666134607e012d251ee7684083e4" title=" " alt="" coords="250,5,362,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,21,363,21,363,16,394,16"/>
-<area shape="rect" id="Node000003" href="$zappy__server_8c.html#aa62b5b5a4d5571b52b810593a981fc1d" title=" " alt="" coords="103,5,202,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="234,21,203,21,203,16,234,16"/>
-<area shape="rect" id="Node000004" href="$main_8c.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="439,5,529,31"/>
+<area shape="rect" id="Node000002" href="$zappy__server_8c.html#a4e0e666134607e012d251ee7684083e4" title=" " alt="" coords="265,5,391,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="425,21,391,21,391,15,425,15"/>
+<area shape="rect" id="Node000003" href="$zappy__server_8c.html#aa62b5b5a4d5571b52b810593a981fc1d" title=" " alt="" coords="108,5,217,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,21,218,21,218,15,252,15"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>

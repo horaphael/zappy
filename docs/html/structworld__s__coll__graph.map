@@ -1,13 +1,13 @@
 <map id="world_s" name="world_s">
-<area shape="rect" id="Node000001" title=" " alt="" coords="130,187,196,213"/>
-<area shape="rect" id="Node000002" href="$structtile__s.html" title=" " alt="" coords="89,96,141,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,136,143,161,157,185,153,188,139,164,125,138"/>
-<area shape="rect" id="Node000003" href="$structplayer__s.html" title=" " alt="" coords="5,5,76,32"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="32,47,25,84,26,104,33,121,52,145,77,164,131,187,128,192,75,168,49,149,28,124,21,105,20,84,27,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,42,107,94,102,97,59,46"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="93,10,102,19,94,28,77,30,76,25,92,23,97,19,89,14"/>
-<area shape="rect" id="Node000004" href="$structegg__s.html" title=" " alt="" coords="166,96,222,123"/>
-<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="187,138,170,187,165,185,182,136"/>
-<area shape="rect" id="Node000005" href="$structteam__s.html" title=" " alt="" coords="246,96,310,123"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="255,135,219,165,185,188,182,184,216,161,251,131"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="144,181,216,207"/>
+<area shape="rect" id="Node000002" href="$structtile__s.html" title=" " alt="" coords="101,93,158,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,130,157,156,173,180,169,183,152,159,138,132"/>
+<area shape="rect" id="Node000003" href="$structplayer__s.html" title=" " alt="" coords="5,5,83,31"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="37,44,29,81,30,100,37,117,58,142,86,161,116,174,144,183,143,188,114,179,83,165,55,146,32,120,25,101,24,81,31,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,39,119,91,116,95,63,43"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="98,9,106,12,109,18,101,26,83,29,83,23,99,22,104,18,102,16,96,14"/>
+<area shape="rect" id="Node000004" href="$structegg__s.html" title=" " alt="" coords="182,93,242,119"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="205,133,187,182,182,180,200,131"/>
+<area shape="rect" id="Node000005" href="$structteam__s.html" title=" " alt="" coords="266,93,337,119"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="279,130,240,160,202,183,199,179,237,155,276,126"/>
 </map>

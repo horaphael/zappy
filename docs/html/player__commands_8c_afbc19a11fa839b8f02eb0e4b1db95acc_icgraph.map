@@ -1,7 +1,7 @@
 <map id="send_ppo" name="send_ppo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="150,31,227,57"/>
-<area shape="rect" id="Node000002" href="$forward_8c.html#ac8755632a243f64d4cfee5c558cdb401" title=" " alt="" coords="5,5,102,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,36,102,30,103,25,135,31"/>
-<area shape="rect" id="Node000003" href="$turn__player_8c.html#af5f5d20df31fc72fe7f21eb961956739" title=" " alt="" coords="16,56,91,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,57,92,65,91,60,134,52"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="160,31,244,56"/>
+<area shape="rect" id="Node000002" href="$forward_8c.html#ac8755632a243f64d4cfee5c558cdb401" title=" " alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,36,112,30,113,25,147,31"/>
+<area shape="rect" id="Node000003" href="$turn__player_8c.html#af5f5d20df31fc72fe7f21eb961956739" title=" " alt="" coords="17,55,100,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,55,101,63,100,58,146,50"/>
 </map>

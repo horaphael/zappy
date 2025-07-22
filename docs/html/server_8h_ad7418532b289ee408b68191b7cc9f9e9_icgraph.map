@@ -1,5 +1,5 @@
 <map id="remove_player_from_tile" name="remove_player_from_tile">
-<area shape="rect" id="Node000001" title=" " alt="" coords="150,5,313,32"/>
-<area shape="rect" id="Node000002" href="$forward_8c.html#ac8755632a243f64d4cfee5c558cdb401" title=" " alt="" coords="5,5,102,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,21,102,21,102,16,134,16"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="160,5,347,31"/>
+<area shape="rect" id="Node000002" href="$forward_8c.html#ac8755632a243f64d4cfee5c558cdb401" title=" " alt="" coords="5,5,112,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,21,112,21,112,15,147,15"/>
 </map>

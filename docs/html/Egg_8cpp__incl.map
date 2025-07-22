@@ -1,28 +1,28 @@
 <map id="Egg.cpp" name="Egg.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="264,5,333,32"/>
-<area shape="rect" id="Node000002" href="$Egg_8hpp.html" title=" " alt="" coords="264,80,333,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,33,301,64,296,64,296,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,229,77,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="278,109,77,224,75,219,275,105"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="364,155,428,181"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="317,105,369,143,365,148,314,109"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="100,229,238,256"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="287,109,239,156,189,219,185,215,235,153,283,105"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="451,155,519,181"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="332,105,439,146,437,151,330,110"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="262,229,330,256"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="284,109,264,129,248,156,245,172,250,188,271,217,267,220,245,190,240,172,242,154,260,126,280,105"/>
-<area shape="rect" id="Node000008" href="$Player_8hpp.html" title="Déclaration de la classe Player pour l&#39;interface graphique du projet Zappy." alt="" coords="257,155,340,181"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="301,107,301,139,296,139,296,107"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="543,155,611,181"/>
-<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="334,101,528,151,527,157,333,106"/>
-<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="257,184,93,230,91,225,256,178"/>
-<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="277,184,206,224,204,219,275,180"/>
-<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="301,182,299,214,294,214,295,182"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="354,229,408,256"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="314,180,357,217,354,221,311,184"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="431,229,478,256"/>
-<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="327,179,418,222,416,226,324,184"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="501,229,552,256"/>
-<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="339,179,487,226,485,231,338,184"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="281,5,354,31"/>
+<area shape="rect" id="Node000002" href="$Egg_8hpp.html" title=" " alt="" coords="280,79,355,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,31,320,65,315,65,315,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,225,85,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,107,80,221,77,217,294,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="387,152,458,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="336,102,396,142,393,147,333,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="109,225,256,251"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="305,106,254,154,201,216,197,213,250,150,301,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="483,152,557,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="351,102,475,145,474,150,349,107"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="280,225,355,251"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="302,106,280,126,263,153,260,170,266,186,291,215,287,218,262,189,255,170,257,151,276,123,299,102"/>
+<area shape="rect" id="Node000008" href="$Player_8hpp.html" title="Déclaration de la classe Player pour l&#39;interface graphique du projet Zappy." alt="" coords="272,152,363,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="320,104,320,138,315,138,315,104"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="581,152,659,177"/>
+<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="356,99,569,149,568,154,354,104"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="274,180,99,225,98,220,273,175"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="297,180,218,221,216,216,294,175"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="320,178,320,212,315,212,315,178"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="379,225,437,251"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="334,175,384,214,381,219,330,179"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="461,225,512,251"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="346,175,450,218,447,223,344,180"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="536,225,592,251"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="358,175,523,222,522,227,356,180"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="Zappy::GUI::run" name="Zappy::GUI::run">
-<area shape="rect" id="Node000001" title="Lance la boucle principale avec la connexion au serveur." alt="" coords="103,5,218,32"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title="Lance la boucle principale avec la connexion au serveur." alt="" coords="108,5,231,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
 </map>

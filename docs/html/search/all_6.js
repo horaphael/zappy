@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['east_0',['EAST',['../namespaceZappy.html#a5db576a814f90f11b28d884636ed896ba08f1969bae07a59d4ab3ddaf2172565f',1,'Zappy::EAST'],['../server_8h.html#a7b6212532f22831f81387f285488dabdab5b3793b961949c817c7c0d99c05dad7',1,'EAST:&#160;server.h']]],
-  ['egg_1',['Egg',['../classZappy_1_1Egg.html',1,'Zappy::Egg'],['../classZappy_1_1Egg.html#a722ba9e0018f3929203f1edf5912f6cf',1,'Zappy::Egg::Egg()']]],
+  ['east_0',['east',['../namespaceZappy.html#a5db576a814f90f11b28d884636ed896ba08f1969bae07a59d4ab3ddaf2172565f',1,'Zappy::EAST'],['../server_8h.html#a7b6212532f22831f81387f285488dabdab5b3793b961949c817c7c0d99c05dad7',1,'EAST:&#160;server.h']]],
+  ['egg_1',['egg',['../classZappy_1_1Egg.html',1,'Zappy::Egg'],['../classZappy_1_1Egg.html#a722ba9e0018f3929203f1edf5912f6cf',1,'Zappy::Egg::Egg()']]],
   ['egg_2ec_2',['egg.c',['../egg_8c.html',1,'']]],
   ['egg_2ecpp_3',['Egg.cpp',['../Egg_8cpp.html',1,'']]],
   ['egg_2ehpp_4',['Egg.hpp',['../Egg_8hpp.html',1,'']]],
