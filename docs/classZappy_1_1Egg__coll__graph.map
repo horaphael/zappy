@@ -1,0 +1,13 @@
+<map id="Zappy::Egg" name="Zappy::Egg">
+<area shape="rect" id="Node000001" title="Représente une entité œuf dans la simulation." alt="" coords="143,137,237,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,44,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="27,44,34,79,41,97,52,111,72,126,95,136,143,146,142,151,93,141,69,131,48,115,36,99,29,81,22,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="77,5,127,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,44,109,79,115,96,124,112,138,125,156,135,153,140,135,129,120,115,110,98,104,80,99,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="158,5,209,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,44,192,137,187,137,182,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="233,5,304,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="265,46,254,80,235,115,209,139,206,135,231,112,249,78,260,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="328,5,388,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="358,45,348,81,338,100,325,115,305,129,283,139,238,149,237,144,282,134,303,125,322,111,334,97,343,79,353,44"/>
+</map>

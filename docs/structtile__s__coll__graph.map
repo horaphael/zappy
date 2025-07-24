@@ -1,6 +1,13 @@
 <map id="tile_s" name="tile_s">
-<area shape="rect" id="Node000001" title=" " alt="" coords="15,93,73,119"/>
-<area shape="rect" id="Node000002" href="$structplayer__s.html" title=" " alt="" coords="5,5,83,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,45,47,93,41,93,41,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="98,9,106,12,109,18,101,26,83,29,83,23,99,22,104,18,102,16,96,14"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,273,63,299"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="11,5,49,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="32,44,33,211,36,273,31,273,27,211,27,44"/>
+<area shape="rect" id="Node000003" href="$structplayer__s.html" title=" " alt="" coords="113,169,190,194"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="39,43,55,84,80,126,105,149,131,166,128,171,101,153,76,130,50,86,34,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,205,49,275,46,271,126,201"/>
+<area shape="poly" id="edge6_Node000003_Node000003" title=" " alt="" coords="205,170,213,174,217,182,208,192,191,195,190,190,206,187,211,181,209,178,203,174"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="91,5,225,31"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="160,45,154,169,149,168,154,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="250,5,311,31"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="274,45,255,86,225,130,200,153,174,171,171,166,197,149,221,126,250,84,269,43"/>
 </map>
