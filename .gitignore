@@ -1,0 +1,7 @@
+.vscode
+network_lib/.vscode
+a.out
+*~
+*#
+*.o
+
