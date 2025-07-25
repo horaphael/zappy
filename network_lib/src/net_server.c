@@ -16,6 +16,19 @@ static void init_server_address(struct sockaddr_in *addr, int port)
     addr->sin_addr.s_addr = INADDR_ANY;
 }
 
+static bool bind_and_listen(struct sockaddr_in *servaddr, int listenfd)
+{
+    if (bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) {
+        close_socket("bind", listenfd);
+        return false;
+    }
+    if (listen(listenfd, MAX_CLIENTS) < 0) {
+        close_socket("listen", listenfd);
+        return false;
+    }
+    return true;
+}
+
 static int create_server_socket(int port)
 {
     struct sockaddr_in servaddr;
@@ -26,19 +39,14 @@ static int create_server_socket(int port)
         perror("socket");
         return -1;
     }
-    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
+    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR,
+        &opt, sizeof(opt)) < 0) {
         close_socket("setsockopt", listenfd);
         return -1;
     }
     init_server_address(&servaddr, port);
-    if (bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) {
-        close_socket("bind", listenfd);
+    if (!bind_and_listen(&servaddr, listenfd))
         return -1;
-    }
-    if (listen(listenfd, MAX_CLIENTS) < 0) {
-        close_socket("listen", listenfd);
-        return -1;
-    }
     return listenfd;
 }
 
