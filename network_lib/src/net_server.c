@@ -18,7 +18,7 @@ static void init_server_address(struct sockaddr_in *addr, int port)
 
 static bool bind_and_listen(struct sockaddr_in *servaddr, int listenfd)
 {
-    if (bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) {
+    if (bind(listenfd, (struct sockaddr *)servaddr, sizeof(*servaddr)) < 0) {
         close_socket("bind", listenfd);
         return false;
     }
@@ -77,9 +77,6 @@ bool net_server_start(net_server_t *server)
         return false;
     server->running = true;
     LOG_DEBUG("Server launched.");
-    while (server->running) {
-        net_server_poll(server);
-    }
     return true;
 }
 

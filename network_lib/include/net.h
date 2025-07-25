@@ -71,7 +71,7 @@ bool net_server_start(net_server_t *server);
  *
  * @param server Le serveur dont on veut traiter les événements.
  */
-void net_server_poll(net_server_t *server);
+void net_server_poll(net_server_t *server, void (*on_data)(net_client_t *client, net_server_t *server, void *args), void (*on_disconnect)(net_client_t *client, net_server_t *server, void *args), void (*on_connect)(net_client_t *client, net_server_t *server, void *args));
 
 /**
  * @brief Arrête proprement le serveur (arrête la boucle).
