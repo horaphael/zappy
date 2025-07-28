@@ -5,8 +5,8 @@
 ** net_handle
 */
 
-#include "net.h"
-#include "log.h"
+#include "../include/net.h"
+#include "../include/log.h"
 
 void handle_data(int fd, char *data)
 {

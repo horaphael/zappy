@@ -5,7 +5,7 @@
 ** net_client
 */
 
-#include "net.h"
+#include "../include/net.h"
 
 void init_clients_array(net_server_t *server)
 {

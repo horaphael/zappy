@@ -5,7 +5,7 @@
 ** net_utils
 */
 
-#include "log.h"
+#include "../include/log.h"
 
 static log_meta_t get_log_label_color(log_level_t level)
 {

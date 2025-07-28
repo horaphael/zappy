@@ -4,21 +4,25 @@
 ** File description:
 ** net_server
 */
+#include "../include/net.h"
+#include "../include/log.h"
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 
-#include "net.h"
-#include "log.h"
 
-static bool bind_and_listen(const char *ip, int port, int listenfd)
+static void init_server_address(struct sockaddr_in *addr, int port, const char *host)
 {
-    struct sockaddr_in servaddr = {0};
+    memset(addr, 0, sizeof(struct sockaddr_in));
+    addr->sin_family = AF_INET;
+    addr->sin_port = htons(port);
+    inet_aton(host, &addr->sin_addr);
+}
 
-    servaddr.sin_family = AF_INET;
-    servaddr.sin_port = htons(port);
-    if (inet_pton(AF_INET, ip, &servaddr.sin_addr) <= 0) {
-        perror("inet_pton");
-        return false;
-    }
-    if (bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) {
+static bool bind_and_listen(struct sockaddr_in *servaddr, int listenfd)
+{
+    if (bind(listenfd, (struct sockaddr *)servaddr, sizeof(*servaddr)) < 0) {
         close_socket("bind", listenfd);
         return false;
     }
@@ -29,8 +33,9 @@ static bool bind_and_listen(const char *ip, int port, int listenfd)
     return true;
 }
 
-static int create_server_socket(const char *ip, int port)
+static int create_server_socket(const char *host, unsigned int port)
 {
+    struct sockaddr_in servaddr;
     int listenfd = socket(AF_INET, SOCK_STREAM, 0);
     int opt = 1;
 
@@ -38,35 +43,38 @@ static int create_server_socket(const char *ip, int port)
         perror("socket");
         return -1;
     }
-    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
+    if (setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR,
+        &opt, sizeof(opt)) < 0) {
         close_socket("setsockopt", listenfd);
         return -1;
     }
-    if (!bind_and_listen(ip, port, listenfd))
+    init_server_address(&servaddr, port, host);
+    if (!bind_and_listen(&servaddr, listenfd))
         return -1;
     return listenfd;
 }
 
-net_server_t *net_server_create(const char *ip, unsigned int port)
+net_server_t *net_server_create(const char *host, unsigned int port)
 {
     net_server_t *server = calloc(1, sizeof(net_server_t));
 
     if (!server)
         return NULL;
-    server->listen_fd = create_server_socket(ip, port);
-    if (server->listen_fd < 0) {
+    server->listen_fd = create_server_socket(host, port);
+    if (!server->listen_fd) {
         free(server);
         return NULL;
     }
-    strncpy(server->ip, ip, INET_ADDRSTRLEN - 1);
-    server->ip[INET_ADDRSTRLEN - 1] = '\0';
     server->port = port;
     server->running = false;
     server->pfds[0].fd = server->listen_fd;
     server->pfds[0].events = POLLIN;
+    server->on_connect = NULL;
+    server->on_disconnect = NULL;
+    server->on_data = NULL;
     init_poll_fds(server);
     init_clients_array(server);
-    LOG_DEBUG("Server created on %s:%d", server->ip, server->port);
+    LOG_DEBUG("Server successfully created.");
     return server;
 }
 
@@ -75,7 +83,7 @@ bool net_server_start(net_server_t *server)
     if (!server)
         return false;
     server->running = true;
-    LOG_DEBUG("Server started.");
+    LOG_DEBUG("Server launched.");
     return true;
 }
 
@@ -84,7 +92,7 @@ void net_server_stop(net_server_t *server)
     if (!server)
         return;
     server->running = false;
-    LOG_DEBUG("Server stopped.");
+    LOG_DEBUG("Server stoped.");
 }
 
 void net_server_destroy(net_server_t *server)
