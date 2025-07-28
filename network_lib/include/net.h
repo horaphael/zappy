@@ -20,6 +20,7 @@
     #include <poll.h>
     #include <sys/socket.h>
     #include <netinet/in.h>
+    #include <arpa/inet.h>
 
 
 
@@ -40,11 +41,14 @@ typedef struct net_client_s {
 typedef struct net_server_s {
     int listen_fd; // Socket d'écoute
     unsigned int port; // Port TCP utilisé par le serveur
+    char ip[INET_ADDRSTRLEN];
     struct pollfd pfds[MAX_CLIENTS]; // Tableau de pollfd pour la surveillance
     net_client_t clients[MAX_CLIENTS]; // Tableau des clients connectés
     bool running; // Indique si le serveur est en cours d’exécution
+    void (*on_connect)(net_client_t *, struct net_server_s *);
+    void (*on_disconnect)(net_client_t *, struct net_server_s *);
+    void (*on_data)(net_client_t *, struct net_server_s *);
 } net_server_t;
-
 
 
             /* ================== CORE ================== */
@@ -56,7 +60,7 @@ typedef struct net_server_s {
  * @return Un pointeur vers une structure net_server_t initialisée
  * , ou NULL en cas d’échec.
  */
-net_server_t *net_server_create(unsigned int port);
+net_server_t *net_server_create(const char *ip, unsigned int port);
 
 /**
  * @brief Démarre le serveur (bind + listen).
@@ -71,7 +75,7 @@ bool net_server_start(net_server_t *server);
  *
  * @param server Le serveur dont on veut traiter les événements.
  */
-void net_server_poll(net_server_t *server, void (*on_data)(net_client_t *client, net_server_t *server, void *args), void (*on_disconnect)(net_client_t *client, net_server_t *server, void *args), void (*on_connect)(net_client_t *client, net_server_t *server, void *args));
+void net_server_poll(net_server_t *server, int timeout);
 
 /**
  * @brief Arrête proprement le serveur (arrête la boucle).
@@ -169,5 +173,7 @@ void handle_connect(int fd);
  * @param data Les données reçues.
  */
 void handle_data(int fd, char *data);
+
+void net_server_init(net_server_t *server, int listen_fd, void (*on_connect)(net_client_t *, net_server_t *), void (*on_disconnect)(net_client_t *, net_server_t *), void (*on_data)(net_client_t *, net_server_t *));
 
 #endif /* NET_H_ */
