@@ -81,7 +81,6 @@ void net_server_poll(net_server_t *server, int poll_timeout)
     }
     if (server->pfds[0].revents & POLLIN)
         new_connection(server);
-    printf("after new connection function clients\n");
     for (int i = 1; i < MAX_CLIENTS; i++) {
         if (server->pfds[i].fd != -1 && (server->pfds[i].revents & POLLIN))
             handle_client_data(server, i);

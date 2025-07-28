@@ -7,6 +7,7 @@
 
 #include "include/net.h"
 #include "include/log.h"
+#include <stdlib.h>
 
 void handle_client_connect(net_client_t *client, net_server_t *server, void *args)
 {
@@ -14,7 +15,11 @@ void handle_client_connect(net_client_t *client, net_server_t *server, void *arg
     (void)server;
     LOG_INFO("New client connected: fd=%d", client->fd);
     client->active = true;
-    memset(client->buffer, 0, sizeof(server->buffer_size));
+    if (client->buffer)
+        free(client->buffer);
+    client->buffer = calloc(1, sizeof(server->buffer_size));
+    if (!client->buffer)
+        return;
     net_send(client->fd, "Welcome to the server!\n");
 }
 
@@ -26,7 +31,7 @@ void handle_client_disconnect(net_client_t *client, net_server_t *server, void *
     close(client->fd);
     client->fd = -1;
     client->active = false;
-    memset(client->buffer, 0, sizeof(server->buffer_size));
+    free(client->buffer);
 }
 
 void handle_client_data(net_client_t *client, net_server_t *server, void *args)
@@ -39,18 +44,18 @@ void handle_client_data(net_client_t *client, net_server_t *server, void *args)
 
 int main(void)
 {
-    net_server_t *server = net_server_create("127.0.0.1", 4243, 1024 * sizeof(char));
+    net_server_t *server = net_server_create("127.0.0.1", 4243, 2 * sizeof(char));
     int timeout = 0;
 
     if (!server)
         return 84;
-    // set_handle_connection(server, handle_client_connect);
-    // set_handle_disconnection(server, handle_client_disconnect);
-    // set_handle_data(server, handle_client_data);
+    set_handle_connection(server, handle_client_connect);
+    set_handle_disconnection(server, handle_client_disconnect);
+    set_handle_data(server, handle_client_data);
 
-    set_handle_connection(server, NULL);
-    set_handle_disconnection(server, NULL);
-    set_handle_data(server, NULL);
+    // set_handle_connection(server, NULL);
+    // set_handle_disconnection(server, NULL);
+    // set_handle_data(server, NULL);
     if (!net_server_start(server))
         return 84;
     while (server->running) {

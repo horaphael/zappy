@@ -11,13 +11,11 @@
 
 void init_clients_array(net_server_t *server)
 {
-    printf("before creating clients\n");
     for (int i = 0; i < MAX_CLIENTS; i++) {
         server->clients[i].fd = -1;
         server->clients[i].active = false;
         server->clients->buffer = calloc(1, sizeof(server->buffer_size));
     }
-    printf("after creating clients\n");
 }
 
 void net_close_client(net_server_t *server, int fd)
