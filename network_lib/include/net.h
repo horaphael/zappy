@@ -31,7 +31,7 @@
 typedef struct net_client_s {
     int fd;                         // Descripteur de socket du client
     bool active;                    // Indique si le client est actif
-    char buffer[BUFFER_SIZE];       // Tampon de réception des données
+    char *buffer;       // Tampon de réception des données
 } net_client_t;
 
 /**
@@ -39,6 +39,7 @@ typedef struct net_client_s {
  */
 typedef struct net_server_s {
     int listen_fd; // Socket d'écoute
+    size_t buffer_size; // Size for client's buffer
     unsigned int port; // Port TCP utilisé par le serveur
     struct pollfd pfds[MAX_CLIENTS]; // Tableau de pollfd pour la surveillance
     net_client_t clients[MAX_CLIENTS]; // Tableau des clients connectés
@@ -59,7 +60,7 @@ typedef struct net_server_s {
  * @return Un pointeur vers une structure net_server_t initialisée
  * , ou NULL en cas d’échec.
  */
-net_server_t *net_server_create(const char *host, unsigned int port);
+net_server_t *net_server_create(const char *host, unsigned int port, size_t buffer_size);
 
 /**
  * @brief Démarre le serveur (bind + listen).

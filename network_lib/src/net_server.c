@@ -54,7 +54,7 @@ static int create_server_socket(const char *host, unsigned int port)
     return listenfd;
 }
 
-net_server_t *net_server_create(const char *host, unsigned int port)
+net_server_t *net_server_create(const char *host, unsigned int port, size_t buffer_size)
 {
     net_server_t *server = calloc(1, sizeof(net_server_t));
 
@@ -72,6 +72,7 @@ net_server_t *net_server_create(const char *host, unsigned int port)
     server->on_connect = NULL;
     server->on_disconnect = NULL;
     server->on_data = NULL;
+    server->buffer_size = buffer_size;
     init_poll_fds(server);
     init_clients_array(server);
     LOG_DEBUG("Server successfully created.");
