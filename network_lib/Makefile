@@ -6,7 +6,7 @@
 ##
 
 CC		= 	gcc
-CFLAGS	= 	-Wall -Wextra -Iinclude
+CFLAGS	= 	-Wall -Wextra -Iinclude -g3
 
 SRC		= 	$(shell find src/ -type f -name "*.c")
 OBJ 	= 	$(SRC:.c=.o)

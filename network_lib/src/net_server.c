@@ -96,6 +96,15 @@ void net_server_stop(net_server_t *server)
     LOG_DEBUG("Server stoped.");
 }
 
+static void free_server(net_server_t *server)
+{
+    for (int i = 0; i < MAX_CLIENTS; i++){
+        if (server->clients[i].buffer)
+            free(server->clients[i].buffer);
+    }
+    free(server);
+}
+
 void net_server_destroy(net_server_t *server)
 {
     if (!server)
@@ -105,6 +114,7 @@ void net_server_destroy(net_server_t *server)
         close(server->listen_fd);
         server->listen_fd = -1;
     }
-    free(server);
+    free_server(server);
     LOG_DEBUG("Server destroyed.");
 }
+

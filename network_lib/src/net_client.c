@@ -14,7 +14,7 @@ void init_clients_array(net_server_t *server)
     for (int i = 0; i < MAX_CLIENTS; i++) {
         server->clients[i].fd = -1;
         server->clients[i].active = false;
-        server->clients->buffer = calloc(1, sizeof(server->buffer_size));
+        server->clients[i].buffer = calloc(1, sizeof(server->buffer_size));
     }
 }
 
@@ -27,8 +27,6 @@ void net_close_client(net_server_t *server, int fd)
             close(server->clients[i].fd);
             server->clients[i].fd = -1;
             server->clients[i].active = false;
-            if (server->clients->buffer)
-                free(server->clients->buffer);
             server->pfds[i + 1].fd = -1;
             server->pfds[i + 1].events = 0;
             server->pfds[i + 1].revents = 0;
@@ -44,8 +42,6 @@ void net_close_all_clients(net_server_t *server)
             close(server->clients[i].fd);
             server->clients[i].fd = -1;
             server->clients[i].active = false;
-            if (server->clients->buffer)
-                free(server->clients->buffer);
         }
     }
 }

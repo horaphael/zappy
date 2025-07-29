@@ -60,7 +60,6 @@ typedef struct net_server_s {
     void *data_disconnection;
 } net_server_t;
 
-
             /* ================== CORE ================== */
 
 /**
