@@ -47,8 +47,10 @@ typedef struct net_server_s {
     void (*on_data)(net_client_t *client, struct net_server_s *server, void *args); // Function to handle incomming data = Null by default
     void (*on_disconnect)(net_client_t *client, struct net_server_s *server, void *args); // Function to handle disconnection of clients = Null by default
     void (*on_connect)(net_client_t *client, struct net_server_s *server, void *args); // Function to handle connection of clients = Null by default
+    void *data_args;
+    void *data_connection;
+    void *data_disconnection;
 } net_server_t;
-
 
 
             /* ================== CORE ================== */
@@ -175,12 +177,12 @@ void handle_connect(int fd);
 void handle_data(int fd, char *data);
 
 void set_handle_data(net_server_t *server, void (*on_data)
-        (net_client_t *client, struct net_server_s *server, void *args));
+        (net_client_t *client, struct net_server_s *server, void *args), void *args);
 
 void set_handle_connection(net_server_t *server, void (*on_connect)
-        (net_client_t *client, struct net_server_s *server, void *args));
+        (net_client_t *client, struct net_server_s *server, void *args), void *args);
 
 void set_handle_disconnection(net_server_t *server, void (*on_connect)
-        (net_client_t *client, struct net_server_s *server, void *args));
+        (net_client_t *client, struct net_server_s *server, void *args), void *args);
 
 #endif /* NET_H_ */

@@ -43,8 +43,9 @@ static void new_connection(net_server_t *server)
         server->pfds[free_slot].events = POLLIN;
         server->clients[free_slot].fd = new_fd;
         server->clients[free_slot].active = true;
+        server->clients[free_slot].buffer = malloc(server->buffer_size);
         if (server->on_connect)
-            server->on_connect(&server->clients[free_slot], server, NULL);
+            server->on_connect(&server->clients[free_slot], server, server->data_connection);
     } else
         close(new_fd);
 }
@@ -56,14 +57,14 @@ static void handle_client_data(net_server_t *server, int i)
 
     if (bytes_read <= 0) {
         if (server->on_disconnect)
-            server->on_disconnect(&server->clients[i], server, NULL);
+            server->on_disconnect(&server->clients[i], server, server->data_disconnection);
         net_close_client(server, server->pfds[i].fd);
     } else {
         buf[bytes_read] = '\0';
         if (server->on_data) {
             strncpy(server->clients[i].buffer, buf, sizeof(server->clients[i].buffer) - 1);
             server->clients[i].buffer[sizeof(server->clients[i].buffer) - 1] = '\0';
-            server->on_data(&server->clients[i], server, NULL);
+            server->on_data(&server->clients[i], server, server->data_args);
         }
     }
 }
