@@ -69,16 +69,16 @@ static void handle_client_data(net_server_t *server, int i)
     }
 }
 
-void net_server_poll(net_server_t *server, int poll_timeout)
+bool net_server_poll(net_server_t *server, int poll_timeout)
 {
     int poll_count = 0;
 
     if (!server)
-        return;
+        return false;
     poll_count = poll(server->pfds, MAX_CLIENTS, poll_timeout);
     if (poll_count < 0) {
         perror("poll");
-        return;
+        return false;
     }
     if (server->pfds[0].revents & POLLIN)
         new_connection(server);
@@ -86,4 +86,5 @@ void net_server_poll(net_server_t *server, int poll_timeout)
         if (server->pfds[i].fd != -1 && (server->pfds[i].revents & POLLIN))
             handle_client_data(server, i);
     }
+    return true;
 }

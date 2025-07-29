@@ -35,6 +35,14 @@ typedef struct net_client_s {
 } net_client_t;
 
 /**
+ * @brief Formatted packet to send from server to client.
+ */
+typedef struct msg_packet_s {
+    void *message;              //message the user want to send
+    size_t message_size;        //the size of the message
+} msg_packet_t;
+
+/**
  * @brief Contient les informations et états du serveur.
  */
 typedef struct net_server_s {
@@ -77,7 +85,7 @@ bool net_server_start(net_server_t *server);
  *
  * @param server Le serveur dont on veut traiter les événements.
  */
-void net_server_poll(net_server_t *server, int poll_timeout);
+bool net_server_poll(net_server_t *server, int poll_timeout);
 
 /**
  * @brief Arrête proprement le serveur (arrête la boucle).
@@ -93,7 +101,24 @@ void net_server_stop(net_server_t *server);
  */
 void net_server_destroy(net_server_t *server);
 
+/**
+ * @brief allow the user to send message to a group of client
+ *
+ * @param server The server
+ * @param on_data Function the user wants to define
+ */
+void net_set_handle_data(net_server_t *server, void (*on_data)
+        (net_client_t *client, struct net_server_s *server, void *args), void *args);
 
+void net_set_handle_connection(net_server_t *server, void (*on_connect)
+        (net_client_t *client, struct net_server_s *server, void *args), void *args);
+
+void net_set_handle_disconnection(net_server_t *server, void (*on_connect)
+        (net_client_t *client, struct net_server_s *server, void *args), void *args);
+
+void net_send_to_specified_clients(net_server_t *server, void *fd, msg_packet_t packet, bool list_mode);
+
+void net_send_all(net_server_t *server, msg_packet_t packet);
 
             /* ================== UTILS ================== */
 
@@ -103,7 +128,8 @@ void net_server_destroy(net_server_t *server);
  * @param fd Descripteur de fichier du socket.
  * @param msg Chaîne de caractères à envoyer.
  */
-void net_send(int fd, const char *msg);
+// void net_send(int fd, const char *msg);
+void net_send(int fd, void *msg, size_t msg_size);
 
 /**
  * @brief Ferme proprement un socket avec message d’erreur.
@@ -175,14 +201,5 @@ void handle_connect(int fd);
  * @param data Les données reçues.
  */
 void handle_data(int fd, char *data);
-
-void set_handle_data(net_server_t *server, void (*on_data)
-        (net_client_t *client, struct net_server_s *server, void *args), void *args);
-
-void set_handle_connection(net_server_t *server, void (*on_connect)
-        (net_client_t *client, struct net_server_s *server, void *args), void *args);
-
-void set_handle_disconnection(net_server_t *server, void (*on_connect)
-        (net_client_t *client, struct net_server_s *server, void *args), void *args);
 
 #endif /* NET_H_ */

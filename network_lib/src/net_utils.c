@@ -6,6 +6,8 @@
 */
 
 #include "../include/log.h"
+#include <stdio.h>
+#include <unistd.h>
 
 static log_meta_t get_log_label_color(log_level_t level)
 {
@@ -49,25 +51,34 @@ void close_socket(char *msg, int socket)
     close(socket);
 }
 
-void net_send(int fd, const char *msg)
+void net_send(int fd, void *msg, size_t msg_size)
 {
-    size_t len = 0;
-    ssize_t sent = 0;
-    size_t total_sent = 0;
+    int write_return = write(fd, msg, msg_size);
 
-    if (!msg || fd < 0)
-        return;
-    len = strlen(msg);
-    while (total_sent < len) {
-        sent = send(fd, msg + total_sent, len - total_sent, 0);
-        if (sent < 0) {
-            if (errno == EINTR)
-                continue;
-            perror("send");
-            break;
-        }
-        if (sent == 0)
-            break;
-        total_sent += sent;
-    }
+    if (write_return == -1)
+        printf("An error occurs during the sending of the message, be better\n");
+    else
+        printf("The message has been sent successfully!\n");
 }
+// void net_send(int fd, const char *msg)
+// {
+//     size_t len = 0;
+//     ssize_t sent = 0;
+//     size_t total_sent = 0;
+//
+//     if (!msg || fd < 0)
+//         return;
+//     len = strlen(msg);
+//     while (total_sent < len) {
+//         sent = send(fd, msg + total_sent, len - total_sent, 0);
+//         if (sent < 0) {
+//             if (errno == EINTR)
+//                 continue;
+//             perror("send");
+//             break;
+//         }
+//         if (sent == 0)
+//             break;
+//         total_sent += sent;
+//     }
+// }

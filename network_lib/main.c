@@ -7,7 +7,6 @@
 
 #include "include/net.h"
 #include "include/log.h"
-#include <stdlib.h>
 
 void handle_client_connect(net_client_t *client, net_server_t *server, void *args)
 {
@@ -30,8 +29,14 @@ void handle_client_disconnect(net_client_t *client, net_server_t *server, void *
 void handle_client_data(net_client_t *client, net_server_t *server, void *args)
 {
     char *cmd = (char *)args;
+    int toto[4] = {2, 4, 6};
+    msg_packet_t packet = {
+        .message = "a client send data\n",
+        .message_size = strlen("a client send data\n"),
+    };
 
-    (void)server;
+    net_send_all(server, packet);
+
     LOG_INFO("Data from fd=%d: %s", client->fd, client->buffer);
     LOG_INFO("CMD: %s", cmd);
 }
@@ -46,9 +51,9 @@ int main(void)
 
     if (!server)
         return 84;
-    set_handle_connection(server, handle_client_connect, data_connect_command);
-    set_handle_disconnection(server, handle_client_disconnect, data_disconnect_command);
-    set_handle_data(server, handle_client_data, data_command);
+    net_set_handle_connection(server, handle_client_connect, data_connect_command);
+    net_set_handle_disconnection(server, handle_client_disconnect, data_disconnect_command);
+    net_set_handle_data(server, handle_client_data, data_command);
 
     // set_handle_connection(server, NULL);
     // set_handle_disconnection(server, NULL);
