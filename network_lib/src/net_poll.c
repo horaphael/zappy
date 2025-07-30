@@ -7,6 +7,7 @@
 
 #include "../include/net.h"
 #include <signal.h>
+#include <string.h>
 
 static bool is_running = true;
 
@@ -48,7 +49,6 @@ static void new_connection(net_server_t *server)
         server->clients[free_slot].fd = new_fd;
         server->clients[free_slot].active = true;
         server->clients[free_slot].id = server->nb_clients;
-        // server->clients[free_slot].buffer = malloc(server->buffer_size);
         if (server->on_connect)
             server->on_connect(&server->clients[free_slot], server, server->data_connection);
     } else
@@ -57,21 +57,24 @@ static void new_connection(net_server_t *server)
 
 static void handle_client_data(net_server_t *server, int i)
 {
-    char buf[server->buffer_size];
-    ssize_t bytes_read = read(server->pfds[i].fd, buf, sizeof(buf) - 1);
+    char *buf = calloc(server->buffer_size + 1, 1);
+    if (!buf)
+        return;
+    ssize_t bytes_read = read(server->pfds[i].fd, buf, server->buffer_size - 1);
 
     if (bytes_read <= 0) {
         if (server->on_disconnect)
             server->on_disconnect(&server->clients[i], server, server->data_disconnection);
         net_close_client(server, server->pfds[i].fd);
     } else {
-        buf[bytes_read] = '\0';
+        if (server->clients[i].buffer)
+            free(server->clients[i].buffer);
+        server->clients[i].buffer = strdup(buf);
         if (server->on_data) {
-            strncpy(server->clients[i].buffer, buf, sizeof(server->clients[i].buffer) - 1);
-            server->clients[i].buffer[sizeof(server->clients[i].buffer) - 1] = '\0';
             server->on_data(&server->clients[i], server, server->data_args);
         }
     }
+    free(buf);
 }
 
 void sighandler(int sig)
@@ -83,28 +86,19 @@ void sighandler(int sig)
 
 bool net_server_poll(net_server_t *server, int poll_timeout)
 {
-    // int poll_count = 0;
-
     if (!server)
         return false;
-    while (server->running){
-        if (!is_running)
-            server->running = false;
-        // poll_count = poll(server->pfds, MAX_CLIENTS, poll_timeout);
-        // if (poll_count < 0) {
-        //     perror("poll");
-        //     return false;
-        // }
-        if (poll(server->pfds, MAX_CLIENTS, poll_timeout) < 0){
-            perror("poll");
-            return false;
-        }
-        if (server->pfds[0].revents & POLLIN)
-            new_connection(server);
-        for (int i = 1; i < MAX_CLIENTS; i++) {
-            if (server->pfds[i].fd != -1 && (server->pfds[i].revents & POLLIN))
-                handle_client_data(server, i);
-        }
+    if (!is_running)
+        server->running = false;
+    if (poll(server->pfds, MAX_CLIENTS, poll_timeout) < 0){
+        perror("poll");
+        return false;
+    }
+    if (server->pfds[0].revents & POLLIN)
+        new_connection(server);
+    for (int i = 1; i < MAX_CLIENTS; i++) {
+        if (server->pfds[i].fd != -1 && (server->pfds[i].revents & POLLIN))
+            handle_client_data(server, i);
     }
     return true;
 }
