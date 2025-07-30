@@ -15,21 +15,28 @@ void net_send_all(net_server_t *server, msg_packet_t packet)
     }
 }
 
-void net_send_to_specified_clients(net_server_t *server, void *fd,
+bool is_a_specified_id(int fd, int *fds, int length)
+{
+    for (int i = 0; i < length; i++){
+        if (fd == fds[i])
+            return true;
+    }
+    return false;
+}
+
+void net_send_to_specified_clients(net_server_t *server, group_t group_id,
         msg_packet_t packet, bool list_mode)
 {
-    int *client_list = NULL;
-
-    if (!fd){
+    if (group_id.group_size == 0){
         net_send_all(server, packet);
         return;
     }
-    client_list = (int *)fd;
     for (int i = 1; i < MAX_CLIENTS; i++){
-        if (server->clients[i].active && server->clients[i].fd == client_list[i]){
+        if (server->clients[i].active &&
+            is_a_specified_id(server->clients[i].id, group_id.clients_id, group_id.group_size)){
             if (!list_mode)
                 continue;
-            net_send(client_list[i], packet.message, packet.message_size);
+            net_send(server->clients[i].fd, packet.message, packet.message_size);
         }
     }
 }

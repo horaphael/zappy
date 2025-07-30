@@ -7,6 +7,7 @@
 #include "../include/net.h"
 #include "../include/log.h"
 #include <netinet/in.h>
+#include <signal.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
@@ -61,10 +62,12 @@ net_server_t *net_server_create(const char *host, unsigned int port, size_t buff
     if (!server)
         return NULL;
     server->listen_fd = create_server_socket(host, port);
+    server->nb_clients = 0;
     if (!server->listen_fd) {
         free(server);
         return NULL;
     }
+    signal(SIGINT, sighandler);
     server->port = port;
     server->running = false;
     server->pfds[0].fd = server->listen_fd;

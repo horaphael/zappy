@@ -29,6 +29,7 @@
  * @brief Représente un client réseau connecté au serveur.
  */
 typedef struct net_client_s {
+    int id;                         // Id of the client
     int fd;                         // Descripteur de socket du client
     bool active;                    // Indique si le client est actif
     char *buffer;       // Tampon de réception des données
@@ -43,9 +44,18 @@ typedef struct msg_packet_s {
 } msg_packet_t;
 
 /**
+ * @brief Group structure to send message to specifics clients
+ */
+typedef struct group_s {
+    int *clients_id;        // clients_fd
+    int group_size;         // groupe size
+} group_t;
+
+/**
  * @brief Contient les informations et états du serveur.
  */
 typedef struct net_server_s {
+    int nb_clients; //nb client connected
     int listen_fd; // Socket d'écoute
     size_t buffer_size; // Size for client's buffer
     unsigned int port; // Port TCP utilisé par le serveur
@@ -115,9 +125,12 @@ void net_set_handle_connection(net_server_t *server, void (*on_connect)
 void net_set_handle_disconnection(net_server_t *server, void (*on_connect)
         (net_client_t *client, struct net_server_s *server, void *args), void *args);
 
-void net_send_to_specified_clients(net_server_t *server, void *fd, msg_packet_t packet, bool list_mode);
+void net_send_to_specified_clients(net_server_t *server, group_t group,
+        msg_packet_t packet, bool list_mode);
 
 void net_send_all(net_server_t *server, msg_packet_t packet);
+
+void sighandler(int sig);
 
             /* ================== UTILS ================== */
 
