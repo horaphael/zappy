@@ -32,11 +32,13 @@ void net_send_to_specified_clients(net_server_t *server, group_t group_id,
         return;
     }
     for (int i = 1; i < MAX_CLIENTS; i++){
-        if (server->clients[i].active &&
-            is_a_specified_id(server->clients[i].id, group_id.clients_id, group_id.group_size)){
-            if (!list_mode)
-                continue;
+        if (server->clients[i].active && is_a_specified_id(server->clients[i].id, group_id.clients_id, group_id.group_size) && list_mode){
             net_send(server->clients[i].fd, packet.message, packet.message_size);
+            continue;
+        }
+        if (server->clients[i].active && !is_a_specified_id(server->clients[i].id, group_id.clients_id, group_id.group_size) && !list_mode){
+            net_send(server->clients[i].fd, packet.message, packet.message_size);
+            continue;
         }
     }
 }
